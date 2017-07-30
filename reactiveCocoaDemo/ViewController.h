@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JSONModel.h"
+#import "ReactiveObjC.h"
+
+@interface viewModel : JSONModel
+@property (nonatomic,strong)NSString *title;
+@property (nonatomic,strong)NSString *subTitle;
+@property (nonatomic,strong)NSString *controller;
+@end
+
 
 @interface ViewController : UIViewController
-
 
 @end
 
