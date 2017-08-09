@@ -44,7 +44,12 @@
         model2.controller = @"demo2Controller";
         
         
-        _dataArray = @[model1,model2].mutableCopy;
+        viewModel *model3= [[viewModel alloc]init];
+        model3.title = @"model3";
+        model3.subTitle = @"model3";
+        model3.controller = @"demo3Controller";
+        
+        _dataArray = @[model1,model2,model3].mutableCopy;
     }
     return _dataArray;
 }

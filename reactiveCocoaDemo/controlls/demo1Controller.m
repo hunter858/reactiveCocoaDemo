@@ -29,6 +29,9 @@
     [super viewDidLoad];
     self.title = @"";
     [self demo1];
+    [self demo2];
+    [self demo3];
+    [self demo4];
 }
 
 -(void)demo1{
@@ -75,10 +78,12 @@
     [[tap rac_gestureSignal] subscribeNext:^(id x) {
         
         NSLog(@"点击view 成功");
+        UIAlertView *alert =[[UIAlertView alloc]initWithTitle:@"" message:@"触摸view success" delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定", nil];        
+        [alert show];
         
     }];
-    self.view.userInteractionEnabled = YES;
-    [self.view addGestureRecognizer:tap];
+    self.redview.userInteractionEnabled = YES;
+    [self.redview addGestureRecognizer:tap];
 }
 
 - (void)didReceiveMemoryWarning {
