@@ -6,12 +6,16 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="demo2Controller">
             <connections>
                 <outlet property="createButton" destination="k9i-Y2-X50" id="Gwd-wH-zDp"/>
+                <outlet property="notificationButton" destination="hrb-0J-FIB" id="Z3b-Uo-cWl"/>
+                <outlet property="resultLabel" destination="Fc7-bf-AsM" id="phI-qK-wmI"/>
+                <outlet property="resultLabel2" destination="5NR-nW-YHl" id="FSy-e8-QpW"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,19 +24,72 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9i-Y2-X50">
-                    <rect key="frame" x="113.5" y="100" width="148" height="30"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="muf-Qo-kd5">
+                    <rect key="frame" x="56" y="50" width="264" height="141"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9i-Y2-X50">
+                            <rect key="frame" x="58" y="22" width="148" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="148" id="3Pn-wl-TZD"/>
+                                <constraint firstAttribute="height" constant="30" id="DPE-bq-cyd"/>
+                            </constraints>
+                            <state key="normal" title="创建一个Alertview"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="监听了点击的结果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fc7-bf-AsM">
+                            <rect key="frame" x="70.5" y="83" width="123" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.58637219669999996" green="0.87247568369999995" blue="0.82761102909999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="148" id="3Pn-wl-TZD"/>
-                        <constraint firstAttribute="height" constant="30" id="DPE-bq-cyd"/>
+                        <constraint firstItem="k9i-Y2-X50" firstAttribute="centerX" secondItem="muf-Qo-kd5" secondAttribute="centerX" id="JBE-Dt-HHt"/>
+                        <constraint firstAttribute="width" secondItem="muf-Qo-kd5" secondAttribute="height" multiplier="15:8" id="OP4-xY-kW2"/>
+                        <constraint firstItem="k9i-Y2-X50" firstAttribute="top" secondItem="muf-Qo-kd5" secondAttribute="top" constant="22" id="mNC-mp-nDi"/>
+                        <constraint firstItem="Fc7-bf-AsM" firstAttribute="centerX" secondItem="muf-Qo-kd5" secondAttribute="centerX" id="tmV-LL-S7g"/>
+                        <constraint firstItem="Fc7-bf-AsM" firstAttribute="top" secondItem="k9i-Y2-X50" secondAttribute="bottom" constant="31" id="vJ0-3j-RrC"/>
                     </constraints>
-                    <state key="normal" title="创建一个Alertview"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m4g-S2-3jK">
+                    <rect key="frame" x="56" y="211" width="264" height="140.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="监听了通知的结果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5NR-nW-YHl">
+                            <rect key="frame" x="71" y="86" width="123" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.58637219669999996" green="0.87247568369999995" blue="0.82761102909999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="m4g-S2-3jK" secondAttribute="height" multiplier="15:8" id="jdr-X6-dbf"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tw6-F9-ivr">
+                    <rect key="frame" x="56" y="371.5" width="263" height="141.5"/>
+                    <color key="backgroundColor" red="0.58637219669999996" green="0.87247568369999995" blue="0.82761102909999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrb-0J-FIB">
+                    <rect key="frame" x="77" y="237" width="223" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="NSNotificationCenter发送通知"/>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="k9i-Y2-X50" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="GA1-dN-1mf"/>
-                <constraint firstItem="k9i-Y2-X50" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Vng-rD-s3D"/>
+                <constraint firstItem="tw6-F9-ivr" firstAttribute="top" secondItem="m4g-S2-3jK" secondAttribute="bottom" constant="20" id="1I5-Vs-NXg"/>
+                <constraint firstItem="m4g-S2-3jK" firstAttribute="width" secondItem="muf-Qo-kd5" secondAttribute="width" id="416-M3-c4L"/>
+                <constraint firstItem="m4g-S2-3jK" firstAttribute="top" secondItem="muf-Qo-kd5" secondAttribute="bottom" constant="20" id="8KI-PE-tJK"/>
+                <constraint firstItem="muf-Qo-kd5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="CO5-BE-f8J"/>
+                <constraint firstItem="tw6-F9-ivr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="KtJ-3X-mEJ"/>
+                <constraint firstItem="m4g-S2-3jK" firstAttribute="leading" secondItem="tw6-F9-ivr" secondAttribute="leading" id="SuV-fZ-hsp"/>
+                <constraint firstItem="muf-Qo-kd5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Vpe-JR-att"/>
+                <constraint firstItem="m4g-S2-3jK" firstAttribute="centerX" secondItem="muf-Qo-kd5" secondAttribute="centerX" id="bT9-5g-OUj"/>
+                <constraint firstItem="muf-Qo-kd5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="56" id="pv3-d4-3XI"/>
+                <constraint firstItem="muf-Qo-kd5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="r7C-MG-QEB"/>
+                <constraint firstAttribute="bottom" secondItem="tw6-F9-ivr" secondAttribute="bottom" constant="154" id="yZk-k2-4qK"/>
             </constraints>
             <point key="canvasLocation" x="87.5" y="73.5"/>
         </view>
