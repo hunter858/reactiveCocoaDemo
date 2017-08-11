@@ -49,7 +49,12 @@
         model3.subTitle = @"model3";
         model3.controller = @"demo3Controller";
         
-        _dataArray = @[model1,model2,model3].mutableCopy;
+        viewModel *model4 = [[viewModel alloc]init];
+        model4.title = @"刮刮乐";
+        model4.subTitle = @"刮刮乐";
+        model4.controller = @"demo4Controller";
+        
+        _dataArray = @[model1,model2,model3,model4].mutableCopy;
     }
     return _dataArray;
 }

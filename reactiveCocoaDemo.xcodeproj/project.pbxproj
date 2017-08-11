@@ -16,13 +16,14 @@
 		E608526A1F2D9A3C00671793 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E60852681F2D9A3C00671793 /* LaunchScreen.storyboard */; };
 		E60852751F2D9A3D00671793 /* reactiveCocoaDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E60852741F2D9A3D00671793 /* reactiveCocoaDemoTests.m */; };
 		E60852801F2D9A3D00671793 /* reactiveCocoaDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E608527F1F2D9A3D00671793 /* reactiveCocoaDemoUITests.m */; };
+		E612150E1F3D9A6100D39B5A /* demo4Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E612150C1F3D9A6100D39B5A /* demo4Controller.m */; };
+		E612150F1F3D9A6100D39B5A /* demo4Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = E612150D1F3D9A6100D39B5A /* demo4Controller.xib */; };
 		E64E78D81F2DA7C800A52BD1 /* demo1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E64E78D61F2DA7C800A52BD1 /* demo1Controller.m */; };
 		E64E78D91F2DA7C800A52BD1 /* demo1Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = E64E78D71F2DA7C800A52BD1 /* demo1Controller.xib */; };
 		E64E78DD1F2DA7D700A52BD1 /* demo2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E64E78DB1F2DA7D700A52BD1 /* demo2Controller.m */; };
 		E64E78DE1F2DA7D700A52BD1 /* demo2Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = E64E78DC1F2DA7D700A52BD1 /* demo2Controller.xib */; };
 		E64E78E21F2DA7E500A52BD1 /* demo3Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E64E78E01F2DA7E500A52BD1 /* demo3Controller.m */; };
 		E64E78E31F2DA7E500A52BD1 /* demo3Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = E64E78E11F2DA7E500A52BD1 /* demo3Controller.xib */; };
-		E64E78E61F2DA7F100A52BD1 /* demo4Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E64E78E51F2DA7F100A52BD1 /* demo4Controller.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,9 @@
 		E608527B1F2D9A3D00671793 /* reactiveCocoaDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = reactiveCocoaDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E608527F1F2D9A3D00671793 /* reactiveCocoaDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = reactiveCocoaDemoUITests.m; sourceTree = "<group>"; };
 		E60852811F2D9A3D00671793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E612150B1F3D9A6100D39B5A /* demo4Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demo4Controller.h; sourceTree = "<group>"; };
+		E612150C1F3D9A6100D39B5A /* demo4Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = demo4Controller.m; sourceTree = "<group>"; };
+		E612150D1F3D9A6100D39B5A /* demo4Controller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = demo4Controller.xib; sourceTree = "<group>"; };
 		E64E78D51F2DA7C800A52BD1 /* demo1Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demo1Controller.h; sourceTree = "<group>"; };
 		E64E78D61F2DA7C800A52BD1 /* demo1Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = demo1Controller.m; sourceTree = "<group>"; };
 		E64E78D71F2DA7C800A52BD1 /* demo1Controller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = demo1Controller.xib; sourceTree = "<group>"; };
@@ -70,8 +74,6 @@
 		E64E78DF1F2DA7E500A52BD1 /* demo3Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demo3Controller.h; sourceTree = "<group>"; };
 		E64E78E01F2DA7E500A52BD1 /* demo3Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = demo3Controller.m; sourceTree = "<group>"; };
 		E64E78E11F2DA7E500A52BD1 /* demo3Controller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = demo3Controller.xib; sourceTree = "<group>"; };
-		E64E78E41F2DA7F100A52BD1 /* demo4Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demo4Controller.h; sourceTree = "<group>"; };
-		E64E78E51F2DA7F100A52BD1 /* demo4Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = demo4Controller.m; sourceTree = "<group>"; };
 		F92805BB2757F91AD2C5D893 /* Pods_reactiveCocoaDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_reactiveCocoaDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -195,8 +197,9 @@
 				E64E78DF1F2DA7E500A52BD1 /* demo3Controller.h */,
 				E64E78E01F2DA7E500A52BD1 /* demo3Controller.m */,
 				E64E78E11F2DA7E500A52BD1 /* demo3Controller.xib */,
-				E64E78E41F2DA7F100A52BD1 /* demo4Controller.h */,
-				E64E78E51F2DA7F100A52BD1 /* demo4Controller.m */,
+				E612150B1F3D9A6100D39B5A /* demo4Controller.h */,
+				E612150C1F3D9A6100D39B5A /* demo4Controller.m */,
+				E612150D1F3D9A6100D39B5A /* demo4Controller.xib */,
 			);
 			path = controlls;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				E60852671F2D9A3C00671793 /* Assets.xcassets in Resources */,
 				E64E78D91F2DA7C800A52BD1 /* demo1Controller.xib in Resources */,
 				E64E78DE1F2DA7D700A52BD1 /* demo2Controller.xib in Resources */,
+				E612150F1F3D9A6100D39B5A /* demo4Controller.xib in Resources */,
 				E60852651F2D9A3C00671793 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,7 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E60852621F2D9A3C00671793 /* ViewController.m in Sources */,
-				E64E78E61F2DA7F100A52BD1 /* demo4Controller.m in Sources */,
+				E612150E1F3D9A6100D39B5A /* demo4Controller.m in Sources */,
 				E608525F1F2D9A3C00671793 /* AppDelegate.m in Sources */,
 				E64E78D81F2DA7C800A52BD1 /* demo1Controller.m in Sources */,
 				E64E78DD1F2DA7D700A52BD1 /* demo2Controller.m in Sources */,
