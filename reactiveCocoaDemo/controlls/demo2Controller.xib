@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="demo2Controller">
             <connections>
                 <outlet property="createButton" destination="k9i-Y2-X50" id="Gwd-wH-zDp"/>
+                <outlet property="myScrollview" destination="seW-SP-cZG" id="Kio-HE-f5Q"/>
                 <outlet property="notificationButton" destination="hrb-0J-FIB" id="Z3b-Uo-cWl"/>
                 <outlet property="resultLabel" destination="Fc7-bf-AsM" id="phI-qK-wmI"/>
                 <outlet property="resultLabel2" destination="5NR-nW-YHl" id="FSy-e8-QpW"/>
@@ -54,9 +55,8 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m4g-S2-3jK">
                     <rect key="frame" x="56" y="211" width="264" height="140.5"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="监听了通知的结果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5NR-nW-YHl">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="监听了通知的结果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5NR-nW-YHl">
                             <rect key="frame" x="71" y="86" width="123" height="18"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
@@ -64,12 +64,25 @@
                     </subviews>
                     <color key="backgroundColor" red="0.58637219669999996" green="0.87247568369999995" blue="0.82761102909999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
+                        <constraint firstItem="5NR-nW-YHl" firstAttribute="centerX" secondItem="m4g-S2-3jK" secondAttribute="centerX" id="7si-2d-e9q"/>
+                        <constraint firstItem="5NR-nW-YHl" firstAttribute="top" secondItem="m4g-S2-3jK" secondAttribute="top" constant="86" id="GDV-TN-LPY"/>
                         <constraint firstAttribute="width" secondItem="m4g-S2-3jK" secondAttribute="height" multiplier="15:8" id="jdr-X6-dbf"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tw6-F9-ivr">
                     <rect key="frame" x="56" y="371.5" width="263" height="141.5"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="seW-SP-cZG">
+                            <rect key="frame" x="0.0" y="0.0" width="263" height="141.5"/>
+                        </scrollView>
+                    </subviews>
                     <color key="backgroundColor" red="0.58637219669999996" green="0.87247568369999995" blue="0.82761102909999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="seW-SP-cZG" firstAttribute="top" secondItem="tw6-F9-ivr" secondAttribute="top" id="DiH-xg-zz2"/>
+                        <constraint firstAttribute="bottom" secondItem="seW-SP-cZG" secondAttribute="bottom" id="Nke-GY-XX6"/>
+                        <constraint firstItem="seW-SP-cZG" firstAttribute="leading" secondItem="tw6-F9-ivr" secondAttribute="leading" id="gPR-fE-6Ug"/>
+                        <constraint firstAttribute="trailing" secondItem="seW-SP-cZG" secondAttribute="trailing" id="hwq-Br-aWk"/>
+                    </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrb-0J-FIB">
                     <rect key="frame" x="77" y="237" width="223" height="30"/>

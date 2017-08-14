@@ -18,6 +18,12 @@
 		E60852801F2D9A3D00671793 /* reactiveCocoaDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E608527F1F2D9A3D00671793 /* reactiveCocoaDemoUITests.m */; };
 		E612150E1F3D9A6100D39B5A /* demo4Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E612150C1F3D9A6100D39B5A /* demo4Controller.m */; };
 		E612150F1F3D9A6100D39B5A /* demo4Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = E612150D1F3D9A6100D39B5A /* demo4Controller.xib */; };
+		E617A52A1F41DE7300C9D381 /* demo5Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E617A5281F41DE7300C9D381 /* demo5Controller.m */; };
+		E617A52B1F41DE7300C9D381 /* demo5Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = E617A5291F41DE7300C9D381 /* demo5Controller.xib */; };
+		E617A5321F41DE9100C9D381 /* demo6Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E617A5301F41DE9100C9D381 /* demo6Controller.m */; };
+		E617A5331F41DE9100C9D381 /* demo6Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = E617A5311F41DE9100C9D381 /* demo6Controller.xib */; };
+		E617A5371F41DE9E00C9D381 /* demo7Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E617A5351F41DE9E00C9D381 /* demo7Controller.m */; };
+		E617A5381F41DE9E00C9D381 /* demo7Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = E617A5361F41DE9E00C9D381 /* demo7Controller.xib */; };
 		E64E78D81F2DA7C800A52BD1 /* demo1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E64E78D61F2DA7C800A52BD1 /* demo1Controller.m */; };
 		E64E78D91F2DA7C800A52BD1 /* demo1Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = E64E78D71F2DA7C800A52BD1 /* demo1Controller.xib */; };
 		E64E78DD1F2DA7D700A52BD1 /* demo2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E64E78DB1F2DA7D700A52BD1 /* demo2Controller.m */; };
@@ -65,6 +71,15 @@
 		E612150B1F3D9A6100D39B5A /* demo4Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demo4Controller.h; sourceTree = "<group>"; };
 		E612150C1F3D9A6100D39B5A /* demo4Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = demo4Controller.m; sourceTree = "<group>"; };
 		E612150D1F3D9A6100D39B5A /* demo4Controller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = demo4Controller.xib; sourceTree = "<group>"; };
+		E617A5271F41DE7300C9D381 /* demo5Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demo5Controller.h; sourceTree = "<group>"; };
+		E617A5281F41DE7300C9D381 /* demo5Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = demo5Controller.m; sourceTree = "<group>"; };
+		E617A5291F41DE7300C9D381 /* demo5Controller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = demo5Controller.xib; sourceTree = "<group>"; };
+		E617A52F1F41DE9100C9D381 /* demo6Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demo6Controller.h; sourceTree = "<group>"; };
+		E617A5301F41DE9100C9D381 /* demo6Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = demo6Controller.m; sourceTree = "<group>"; };
+		E617A5311F41DE9100C9D381 /* demo6Controller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = demo6Controller.xib; sourceTree = "<group>"; };
+		E617A5341F41DE9E00C9D381 /* demo7Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demo7Controller.h; sourceTree = "<group>"; };
+		E617A5351F41DE9E00C9D381 /* demo7Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = demo7Controller.m; sourceTree = "<group>"; };
+		E617A5361F41DE9E00C9D381 /* demo7Controller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = demo7Controller.xib; sourceTree = "<group>"; };
 		E64E78D51F2DA7C800A52BD1 /* demo1Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demo1Controller.h; sourceTree = "<group>"; };
 		E64E78D61F2DA7C800A52BD1 /* demo1Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = demo1Controller.m; sourceTree = "<group>"; };
 		E64E78D71F2DA7C800A52BD1 /* demo1Controller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = demo1Controller.xib; sourceTree = "<group>"; };
@@ -200,6 +215,15 @@
 				E612150B1F3D9A6100D39B5A /* demo4Controller.h */,
 				E612150C1F3D9A6100D39B5A /* demo4Controller.m */,
 				E612150D1F3D9A6100D39B5A /* demo4Controller.xib */,
+				E617A5271F41DE7300C9D381 /* demo5Controller.h */,
+				E617A5281F41DE7300C9D381 /* demo5Controller.m */,
+				E617A5291F41DE7300C9D381 /* demo5Controller.xib */,
+				E617A52F1F41DE9100C9D381 /* demo6Controller.h */,
+				E617A5301F41DE9100C9D381 /* demo6Controller.m */,
+				E617A5311F41DE9100C9D381 /* demo6Controller.xib */,
+				E617A5341F41DE9E00C9D381 /* demo7Controller.h */,
+				E617A5351F41DE9E00C9D381 /* demo7Controller.m */,
+				E617A5361F41DE9E00C9D381 /* demo7Controller.xib */,
 			);
 			path = controlls;
 			sourceTree = "<group>";
@@ -314,9 +338,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E64E78E31F2DA7E500A52BD1 /* demo3Controller.xib in Resources */,
+				E617A5331F41DE9100C9D381 /* demo6Controller.xib in Resources */,
 				E608526A1F2D9A3C00671793 /* LaunchScreen.storyboard in Resources */,
+				E617A52B1F41DE7300C9D381 /* demo5Controller.xib in Resources */,
 				E60852671F2D9A3C00671793 /* Assets.xcassets in Resources */,
 				E64E78D91F2DA7C800A52BD1 /* demo1Controller.xib in Resources */,
+				E617A5381F41DE9E00C9D381 /* demo7Controller.xib in Resources */,
 				E64E78DE1F2DA7D700A52BD1 /* demo2Controller.xib in Resources */,
 				E612150F1F3D9A6100D39B5A /* demo4Controller.xib in Resources */,
 				E60852651F2D9A3C00671793 /* Main.storyboard in Resources */,
@@ -355,7 +382,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		D4B24DEDD1B91CA54434DDB0 /* [CP] Embed Pods Frameworks */ = {
@@ -408,12 +435,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E617A5371F41DE9E00C9D381 /* demo7Controller.m in Sources */,
 				E60852621F2D9A3C00671793 /* ViewController.m in Sources */,
 				E612150E1F3D9A6100D39B5A /* demo4Controller.m in Sources */,
+				E617A52A1F41DE7300C9D381 /* demo5Controller.m in Sources */,
 				E608525F1F2D9A3C00671793 /* AppDelegate.m in Sources */,
 				E64E78D81F2DA7C800A52BD1 /* demo1Controller.m in Sources */,
 				E64E78DD1F2DA7D700A52BD1 /* demo2Controller.m in Sources */,
 				E64E78E21F2DA7E500A52BD1 /* demo3Controller.m in Sources */,
+				E617A5321F41DE9100C9D381 /* demo6Controller.m in Sources */,
 				E608525C1F2D9A3C00671793 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

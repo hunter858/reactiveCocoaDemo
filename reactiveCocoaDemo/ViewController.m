@@ -45,8 +45,8 @@
         
         
         viewModel *model3= [[viewModel alloc]init];
-        model3.title = @"model3";
-        model3.subTitle = @"model3";
+        model3.title = @"GCD";
+        model3.subTitle = @"GCD 实用指南";
         model3.controller = @"demo3Controller";
         
         viewModel *model4 = [[viewModel alloc]init];
@@ -54,7 +54,24 @@
         model4.subTitle = @"刮刮乐";
         model4.controller = @"demo4Controller";
         
-        _dataArray = @[model1,model2,model3,model4].mutableCopy;
+        viewModel *model5 = [[viewModel alloc]init];
+        model5.title = @"demo5";
+        model5.subTitle = @"";
+        model5.controller = @"demo5Controller";
+        
+        viewModel *model6 = [[viewModel alloc]init];
+        model6.title = @"demo6";
+        model6.subTitle = @"";
+        model6.controller = @"demo6Controller";
+        
+        viewModel *model7 = [[viewModel alloc]init];
+        model7.title = @"demo7";
+        model7.subTitle = @"";
+        model7.controller = @"demo7Controller";
+        
+
+        
+        _dataArray = @[model1,model2,model3,model4,model5,model6,model7].mutableCopy;
     }
     return _dataArray;
 }

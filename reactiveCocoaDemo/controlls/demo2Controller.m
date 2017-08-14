@@ -12,8 +12,12 @@
 @property (strong, nonatomic) IBOutlet UIButton *createButton;
 @property (strong, nonatomic) IBOutlet UILabel *resultLabel;
 
-@property (strong, nonatomic) IBOutlet UILabel *resultLabel2;
 @property (strong, nonatomic) IBOutlet UIButton *notificationButton;
+@property (strong, nonatomic) IBOutlet UILabel *resultLabel2;
+
+
+@property (strong, nonatomic) IBOutlet UIScrollView *myScrollview;
+
 
 @end
 
@@ -25,6 +29,8 @@
     [self demo4];
     
     [self demo5];
+    
+    [self demo6];
 }
 
 -(void)demo4{
@@ -47,9 +53,11 @@
     __weak typeof(self) weakself=self;
     [[self rac_signalForSelector:@selector(alertView:clickedButtonAtIndex:) fromProtocol:@protocol(UIAlertViewDelegate)] subscribeNext:^(RACTuple *tuple) {
 
-        NSLog(@"first:%@",tuple.first);//tuple.first 是 UIAlertView 对象
+        NSLog(@"first:%@",tuple.first);
+        //tuple.first 是 UIAlertView 对象
         
-        NSLog(@"second:%@",tuple.second);//tuple.second 是 点击了第几个index的值
+        NSLog(@"second:%@",tuple.second);
+        //tuple.second 是 点击了第几个index的值
         
         if([tuple.second isKindOfClass:[NSNumber class]]){
             NSNumber *number = (NSNumber *) tuple.second;
@@ -63,13 +71,46 @@
 }
 
 -(void)demo5{
+    
+    
+    __weak typeof(self) weakself=self;
+    static NSString *notificationName = @"notificationName";
+    NSMutableArray *array =@[@"1",@"2",@"3"].mutableCopy;
+    //1.创建要发送的对象
     [[self.notificationButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
         
         
+        [[NSNotificationCenter defaultCenter]postNotificationName:notificationName object:array];
+        //2.发送通知
         
     }];
+    
+    [[[NSNotificationCenter defaultCenter] rac_addObserverForName:notificationName object:nil]subscribeNext:^(NSNotification * _Nullable notification) {
+        
+        //3.监听发送的对象
+        
+        weakself.resultLabel2.text = [NSString stringWithFormat:@"接受到通知 name：%@",notification.name];
+        
+        NSLog(@"%@",notification.name);
+        NSLog(@"%@",notification.object);
+    }];
+    
 }
 
+
+-(void)demo6{
+    
+    CGSize size = CGSizeMake(self.myScrollview.bounds.size.width*3, self.myScrollview.bounds.size.height);
+    self.myScrollview.contentSize = size;
+    
+    [RACObserve(self.myScrollview, contentOffset) subscribeNext:^(id  _Nullable x) {
+
+        
+        NSLog(@"%@",[x class]);
+        
+    }];
+    
+}
 
 
 - (void)didReceiveMemoryWarning {
