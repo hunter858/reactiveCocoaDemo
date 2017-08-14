@@ -1,12 +1,22 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="demo3Controller">
             <connections>
+                <outlet property="Button1" destination="1tX-rr-2tD" id="I1Q-O2-QTH"/>
+                <outlet property="Button2" destination="dxf-ho-tSA" id="smQ-Ry-ibV"/>
+                <outlet property="Button3" destination="nsz-Ve-NhF" id="a6B-gu-GvR"/>
+                <outlet property="Button4" destination="bEH-RV-sU8" id="GAZ-gh-TW9"/>
+                <outlet property="Button5" destination="wy0-Cb-O5I" id="mk6-9o-vrP"/>
+                <outlet property="Button6" destination="LmU-s4-KgL" id="Oh8-cF-TCt"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +24,48 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="RQF-mI-QrA">
+                    <rect key="frame" x="18" y="60" width="339" height="300"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tX-rr-2tD">
+                            <rect key="frame" x="94" y="0.0" width="151" height="46"/>
+                            <state key="normal" title="1.并行队列 + 同步执行"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxf-ho-tSA">
+                            <rect key="frame" x="93" y="51" width="153" height="45.5"/>
+                            <state key="normal" title="2.并行队列 + 异步执行"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nsz-Ve-NhF">
+                            <rect key="frame" x="93" y="101.5" width="153" height="46"/>
+                            <state key="normal" title="3.串行队列 + 同步执行"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEH-RV-sU8">
+                            <rect key="frame" x="92.5" y="152.5" width="154" height="46"/>
+                            <state key="normal" title="4.串行队列 + 异步执行"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wy0-Cb-O5I">
+                            <rect key="frame" x="146.5" y="203.5" width="46" height="45.5"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LmU-s4-KgL">
+                            <rect key="frame" x="146.5" y="254" width="46" height="46"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.74509803919999995" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="NHQ-bo-yQO"/>
+                    </constraints>
+                </stackView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="RQF-mI-QrA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="18" id="4m9-CA-fwc"/>
+                <constraint firstAttribute="trailing" secondItem="RQF-mI-QrA" secondAttribute="trailing" constant="18" id="cZU-8q-edx"/>
+                <constraint firstItem="RQF-mI-QrA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="pyg-kG-ukq"/>
+            </constraints>
+            <point key="canvasLocation" x="64.5" y="59.5"/>
         </view>
     </objects>
 </document>
