@@ -1,12 +1,24 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="demo5Controller">
             <connections>
+                <outlet property="Button1" destination="emy-T0-Zsv" id="FMS-36-9gE"/>
+                <outlet property="Button2" destination="lzk-4s-neH" id="xkE-Ty-a1q"/>
+                <outlet property="Button3" destination="wLI-hh-bjZ" id="o0y-Rc-l2Q"/>
+                <outlet property="Button4" destination="5rr-kd-H2p" id="DBL-B0-uZQ"/>
+                <outlet property="Button5" destination="ylZ-Fu-lJv" id="duc-v6-JeW"/>
+                <outlet property="Button6" destination="BvV-lr-eyV" id="rM0-IH-ml9"/>
+                <outlet property="Button7" destination="Tm2-It-3gv" id="Sno-GK-O8p"/>
+                <outlet property="Button8" destination="hz9-g3-NTf" id="kcq-3u-0jf"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +26,52 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Byu-4e-hky">
+                    <rect key="frame" x="0.0" y="60" width="375" height="607"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emy-T0-Zsv">
+                            <rect key="frame" x="164.5" y="0.0" width="46" height="71.5"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzk-4s-neH">
+                            <rect key="frame" x="164.5" y="76.5" width="46" height="71.5"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLI-hh-bjZ">
+                            <rect key="frame" x="164.5" y="153" width="46" height="71.5"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rr-kd-H2p">
+                            <rect key="frame" x="164.5" y="229.5" width="46" height="71.5"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylZ-Fu-lJv">
+                            <rect key="frame" x="164.5" y="306" width="46" height="71.5"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BvV-lr-eyV">
+                            <rect key="frame" x="164.5" y="382.5" width="46" height="71.5"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tm2-It-3gv">
+                            <rect key="frame" x="164.5" y="459" width="46" height="71.5"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hz9-g3-NTf">
+                            <rect key="frame" x="164.5" y="535.5" width="46" height="71.5"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Byu-4e-hky" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="Frr-bR-RUp"/>
+                <constraint firstAttribute="trailing" secondItem="Byu-4e-hky" secondAttribute="trailing" id="XDE-6M-JnP"/>
+                <constraint firstAttribute="bottom" secondItem="Byu-4e-hky" secondAttribute="bottom" id="gIP-Wo-axL"/>
+                <constraint firstItem="Byu-4e-hky" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gIQ-73-HyA"/>
+            </constraints>
         </view>
     </objects>
 </document>

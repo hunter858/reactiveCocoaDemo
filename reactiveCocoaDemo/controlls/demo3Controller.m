@@ -8,6 +8,9 @@
 
 #import "demo3Controller.h"
 #import "ReactiveObjC.h"
+#import "AFNetworking.h"
+
+
 @interface demo3Controller ()
 @property (strong, nonatomic) IBOutlet UIButton *Button1;
 @property (strong, nonatomic) IBOutlet UIButton *Button2;
@@ -16,6 +19,9 @@
 @property (strong, nonatomic) IBOutlet UIButton *Button5;
 @property (strong, nonatomic) IBOutlet UIButton *Button6;
 
+@property (strong, nonatomic) IBOutlet UIButton *Button7;
+@property (strong, nonatomic) IBOutlet UIButton *Button8;
+@property (strong, nonatomic) IBOutlet UIButton *Button9;
 
 @end
 
@@ -46,13 +52,24 @@
     [[self.Button6 rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
         [weakself queue_connectWithOther];
     }];
+    [[self.Button7 rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+        [weakself groupSync];
+    }];
+    
+    [[self.Button8 rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+        [weakself group_Afn_async];
+    }];
+    [[self.Button9 rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+        //[weakself queue_connectWithOther];
+    }];
+    
 }
 
 
 
 -(void)addButtonClick{
-    [self testOperactionQueque];
-    [self testGCD];
+//    [self testOperactionQueque];
+//    [self testGCD];
 }
 
 
@@ -193,6 +210,9 @@
 
 -(void)asyncMain{
     
+    /*
+     5.主线程 + 异步队列
+     */
     NSLog(@"asyncMain---begin");
     
     dispatch_queue_t queue = dispatch_get_main_queue();
@@ -214,6 +234,10 @@
 
 -(void)queue_connectWithOther{
     
+    /* 
+     6. 线程之间的通信
+     */
+    
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         for (int i = 0; i < 2; ++i) {
             NSLog(@"1------%@",[NSThread currentThread]);
@@ -226,6 +250,102 @@
     });
 
 }
+
+
+
+-(void)groupSync{
+    
+    /*
+     7.dispatch_group 
+     */
+    
+    dispatch_queue_t queue = dispatch_queue_create("dispatch_group", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_group_t group = dispatch_group_create();
+    
+    
+    dispatch_group_async(group, queue, ^{
+        
+        NSLog(@"任务1");
+    });
+    dispatch_group_async(group, queue, ^{
+        sleep(3);
+         NSLog(@"任务2");
+    });
+    
+    dispatch_group_async(group, queue, ^{
+        sleep(2);
+         NSLog(@"任务3");
+    });
+    
+    dispatch_group_notify(group, queue, ^{
+        NSLog(@"所有任务都完成了" );
+    });
+    
+}
+
+
+-(void)group_Afn_async{
+    
+    
+    
+    
+    AFHTTPSessionManager *manager =[AFHTTPSessionManager manager];
+    //0.创建网络请求类
+    
+    static NSString *url1 =@"http://ooynqqqkg.bkt.clouddn.com/1111.png";
+    static NSString *url2 =@"http://ooynqqqkg.bkt.clouddn.com/111-2016-05-24-4.48.10.png";
+    
+    
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_group_enter(group);
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+       
+
+            // 1.将任务加到group中
+        [manager GET:url1 parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+            
+        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            
+            NSLog(@"请求1 success");
+            dispatch_group_leave(group);
+            //2. 任务请求完成 移除group
+            
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            
+            NSLog(@"请求1 failure");
+            dispatch_group_leave(group);
+            //2. 任务失败 移除group
+        }];
+       
+    });
+    
+    
+    dispatch_group_enter(group);
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        
+        // 1.将任务加到group中
+        [manager GET:url2 parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+            
+        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            
+            NSLog(@"请求2 success");
+            dispatch_group_leave(group);
+            //2. 任务请求完成 移除group
+            
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            
+            NSLog(@"请求2 failure");
+            dispatch_group_leave(group);
+            //2. 任务失败 移除group
+        }];
+    });
+    
+    dispatch_group_notify(group, dispatch_get_global_queue(0, 0), ^{
+        NSLog(@"所有网络请求均完成");
+        
+    });
+    
+  }
 
 
 - (void)didReceiveMemoryWarning {

@@ -7,8 +7,16 @@
 //
 
 #import "demo5Controller.h"
-
+#import "ReactiveObjC.h"
 @interface demo5Controller ()
+@property (strong, nonatomic) IBOutlet UIButton *Button1;
+@property (strong, nonatomic) IBOutlet UIButton *Button2;
+@property (strong, nonatomic) IBOutlet UIButton *Button3;
+@property (strong, nonatomic) IBOutlet UIButton *Button4;
+@property (strong, nonatomic) IBOutlet UIButton *Button5;
+@property (strong, nonatomic) IBOutlet UIButton *Button6;
+@property (strong, nonatomic) IBOutlet UIButton *Button7;
+@property (strong, nonatomic) IBOutlet UIButton *Button8;
 
 @end
 
@@ -17,7 +25,65 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    __weak typeof(self) weakself=self;
+    [[self.Button1 rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
+        [weakself demo1];
+    }];
+    [[self.Button2 rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
+         [weakself demo2];
+    }];
+    [[self.Button3 rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
+         [weakself demo3];
+    }];
+    [[self.Button4 rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
+         [weakself demo4];
+    }];
+    [[self.Button5 rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
+        [weakself demo5];
+    }];
+    [[self.Button6 rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
+         [weakself demo6];
+    }];
+    [[self.Button7 rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
+         [weakself demo7];
+    }];
+    [[self.Button8 rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
+         [weakself demo8];
+    }];
+    
+    
 }
+
+
+-(void)demo1{
+    
+}
+
+-(void)demo2{
+    
+}
+-(void)demo3{
+    
+}
+-(void)demo4{
+    
+}
+-(void)demo5{
+    
+}
+-(void)demo6{
+    
+}
+
+-(void)demo7{
+    
+}
+-(void)demo8{
+    
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
