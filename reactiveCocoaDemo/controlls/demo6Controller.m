@@ -10,6 +10,11 @@
 
 @interface demo6Controller ()
 
+@property (strong, nonatomic) IBOutlet UIView *lightGrayView;
+
+@property (strong, nonatomic) IBOutlet UIView *greenView;
+@property (strong, nonatomic) IBOutlet UIView *orangeView;
+
 @end
 
 @implementation demo6Controller
@@ -17,6 +22,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    UITapGestureRecognizer *tap =[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapView:)];
+    [self.lightGrayView addGestureRecognizer:tap];
+    [self.greenView addGestureRecognizer:tap];
+    [self.orangeView addGestureRecognizer:tap];
+    
+    self.lightGrayView.userInteractionEnabled = YES;
+    self.greenView.userInteractionEnabled = YES;
+    self.orangeView.userInteractionEnabled = YES;
+    
+}
+
+-(void)tapView:(UIView *)view{
+    NSLog(@"点击了");
+    
 }
 
 - (void)didReceiveMemoryWarning {
