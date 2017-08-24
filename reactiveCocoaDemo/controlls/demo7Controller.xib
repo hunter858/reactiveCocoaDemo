@@ -15,7 +15,7 @@
                 <outlet property="Button2" destination="fMo-LP-soV" id="Wco-Mf-Akr"/>
                 <outlet property="Button3" destination="p86-Vq-QZv" id="OUX-R4-NT1"/>
                 <outlet property="Button4" destination="glu-hY-nnZ" id="VGB-X3-NHN"/>
-                <outlet property="greenView" destination="c2h-5S-bwc" id="Jsp-gf-1lg"/>
+                <outlet property="greenView1" destination="c2h-5S-bwc" id="sgl-Gz-aXf"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -36,8 +36,8 @@
                     <rect key="frame" x="20" y="208" width="335" height="200"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HA1-wF-xAD">
-                            <rect key="frame" x="144.5" y="0.0" width="46" height="46.5"/>
-                            <state key="normal" title="Button"/>
+                            <rect key="frame" x="113.5" y="0.0" width="108" height="46.5"/>
+                            <state key="normal" title="画一个红色的圆"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMo-LP-soV">
                             <rect key="frame" x="144.5" y="51.5" width="46" height="46"/>
