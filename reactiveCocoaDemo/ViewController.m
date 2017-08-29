@@ -65,7 +65,7 @@
         model6.controller = @"demo6Controller";
         
         viewModel *model7 = [[viewModel alloc]init];
-        model7.title = @"demo7";
+        model7.title = @"maskLayer + 核心动画";
         model7.subTitle = @"";
         model7.controller = @"demo7Controller";
         
