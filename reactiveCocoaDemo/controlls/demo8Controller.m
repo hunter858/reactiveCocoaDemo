@@ -7,8 +7,14 @@
 //
 
 #import "demo8Controller.h"
-
+#import "ReactiveObjC.h"
 @interface demo8Controller ()
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
+@property (strong, nonatomic) IBOutlet UIButton *Button1;
+@property (strong, nonatomic) IBOutlet UIButton *Button2;
+@property (strong, nonatomic) IBOutlet UIButton *Button3;
+@property (strong, nonatomic) IBOutlet UIButton *Button4;
+@property (strong, nonatomic) IBOutlet UIButton *Button5;
 
 @end
 
@@ -17,8 +23,103 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    self.imageView.image = [UIImage imageNamed:@"photoFile"];
+    self.imageView.contentMode = UIViewContentModeScaleAspectFit;
+    
+    [[self.Button1 rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
+        [self demo1];
+    }];
+
+    [[self.Button2 rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
+        [self demo2];
+    }];
+    [[self.Button3 rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
+        [self demo3];
+    }];
+    [[self.Button4 rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
+        [self demo4];
+    }];
+    [[self.Button5 rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
+        [self demo5];
+    }];
 }
 
+
+-(void)demo1{
+    // coreImage 实现
+    
+    //1. 获取图片
+    CIImage *ciimage = [[CIImage alloc]initWithImage:self.imageView.image];
+    
+    //2. 高斯模糊滤镜
+    CIFilter *blurFilter =[CIFilter filterWithName:@"CIGaussianBlur"];
+    
+    [blurFilter setValue:ciimage forKey:kCIInputImageKey];
+    
+    //3.设置模糊程度
+    [blurFilter setValue:@(20) forKey:@"inputRadius"];
+    
+    //4. 输出图片
+    CIImage * outCIImage = [blurFilter valueForKey:kCIOutputImageKey];
+    
+    //5. 获取图片上下文
+    CIContext *context  = [CIContext contextWithOptions:nil];
+    
+    //6. 从数据流中取出图片
+    CGImageRef CGimage  = [context createCGImage:outCIImage fromRect:[outCIImage extent]];
+    
+    NSLog(@"iamgebouds %f- %f ",self.imageView.bounds.size.width,self.imageView.bounds.size.height);
+    NSLog(@"cgrect %f -%f",[outCIImage extent].size.width,[outCIImage extent].size.height);
+    
+    //7. 通过CGimage 创建Image
+    UIImage *resultImage =[UIImage imageWithCGImage:CGimage];
+    
+    
+    self.imageView.image = resultImage;
+
+    
+}
+
+-(void)demo2{
+    //UIVisualEffectView只适用用户iOS 8
+    
+    UIImage *defaultImage =  [UIImage imageNamed:@"photoFile"];
+    self.imageView.image = defaultImage;
+    
+    
+    /*
+     UIBlurEffectStyleExtraLight, //白色偏多的毛玻璃
+     UIBlurEffectStyleLight, //接近原图的毛玻璃效果（大致轮廓）
+     UIBlurEffectStyleDark,  //黑色偏多的毛玻璃
+     UIBlurEffectStyleExtraDark , 适用于TVos 系统
+     UIBlurEffectStyleRegular,  // 接近原图效果的毛玻璃 和 UIBlurEffectStyleLight类似
+     UIBlurEffectStyleProminent,
+     */
+    
+    
+    UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+    
+    UIVisualEffectView *effectView =  [[UIVisualEffectView alloc]initWithEffect:blurEffect];
+    effectView.frame = CGRectMake(0, 0, self.imageView.bounds.size.width, self.imageView.bounds.size.height);
+    
+    //加上毛玻璃效果
+    [self.imageView addSubview:effectView];
+    
+    
+}
+-(void)demo3{
+    
+}
+-(void)demo4{
+    
+}
+-(void)demo5{
+    
+}
+-(void)demo6{
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

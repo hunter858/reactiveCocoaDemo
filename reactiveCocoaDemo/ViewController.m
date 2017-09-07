@@ -75,16 +75,16 @@
         model8.controller = @"demo8Controller";
         
         viewModel *model9 = [[viewModel alloc]init];
-        model9.title = @"maskLayer + 核心动画";
+        model9.title = @"demo9";
         model9.subTitle = @"";
         model9.controller = @"demo9Controller";
         
         viewModel *model10 = [[viewModel alloc]init];
-        model10.title = @"maskLayer + 核心动画";
+        model10.title = @"demo10";
         model10.subTitle = @"";
         model10.controller = @"demo10Controller";
         
-        _dataArray = @[model1,model2,model3,model4,model5,model6,model7].mutableCopy;
+        _dataArray = @[model1,model2,model3,model4,model5,model6,model7,model8,model9,model10].mutableCopy;
     }
     return _dataArray;
 }

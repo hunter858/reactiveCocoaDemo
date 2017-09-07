@@ -1,12 +1,23 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="demo8Controller">
             <connections>
+                <outlet property="Button1" destination="UJV-RS-t9C" id="70b-bp-nea"/>
+                <outlet property="Button2" destination="kCy-yL-fcA" id="IEe-rC-D8c"/>
+                <outlet property="Button3" destination="tyP-9m-9cE" id="0wf-Db-JwL"/>
+                <outlet property="Button4" destination="xbf-w5-w5j" id="mtC-ms-yal"/>
+                <outlet property="Button5" destination="ymE-nc-Mwe" id="tBO-uy-sLU"/>
+                <outlet property="imageView" destination="GAi-hg-lei" id="vvB-bO-PBm"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +25,62 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JhT-7U-KCb">
+                    <rect key="frame" x="0.0" y="60" width="375" height="211"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GAi-hg-lei">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="GAi-hg-lei" firstAttribute="leading" secondItem="JhT-7U-KCb" secondAttribute="leading" id="3FS-jY-pmr"/>
+                        <constraint firstAttribute="trailing" secondItem="GAi-hg-lei" secondAttribute="trailing" id="Oce-Wd-5lY"/>
+                        <constraint firstAttribute="width" secondItem="JhT-7U-KCb" secondAttribute="height" multiplier="16:9" id="TT0-4w-qf8"/>
+                        <constraint firstItem="GAi-hg-lei" firstAttribute="top" secondItem="JhT-7U-KCb" secondAttribute="top" id="XsY-wn-iG3"/>
+                        <constraint firstAttribute="bottom" secondItem="GAi-hg-lei" secondAttribute="bottom" id="uGU-ui-Dxv"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IEe-WK-u65">
+                    <rect key="frame" x="87" y="311" width="200" height="316"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJV-RS-t9C">
+                            <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
+                            <state key="normal" title="CoreImage 实现毛玻璃"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCy-yL-fcA">
+                            <rect key="frame" x="0.0" y="71.5" width="200" height="30"/>
+                            <state key="normal" title="UIVisualEffectView 毛玻璃"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyP-9m-9cE">
+                            <rect key="frame" x="0.0" y="143" width="200" height="30"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbf-w5-w5j">
+                            <rect key="frame" x="0.0" y="214.5" width="200" height="30"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymE-nc-Mwe">
+                            <rect key="frame" x="0.0" y="286" width="200" height="30"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="BFU-0W-Tif"/>
+                    </constraints>
+                </stackView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="IEe-WK-u65" firstAttribute="centerX" secondItem="JhT-7U-KCb" secondAttribute="centerX" id="41e-nK-Dcf"/>
+                <constraint firstItem="JhT-7U-KCb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="6eb-QL-28X"/>
+                <constraint firstItem="JhT-7U-KCb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="I9S-Pl-F15"/>
+                <constraint firstItem="IEe-WK-u65" firstAttribute="top" secondItem="JhT-7U-KCb" secondAttribute="bottom" constant="40" id="Wcy-GA-kk7"/>
+                <constraint firstItem="JhT-7U-KCb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="byw-UM-hLL"/>
+                <constraint firstAttribute="bottom" secondItem="IEe-WK-u65" secondAttribute="bottom" constant="40" id="emO-m9-bAY"/>
+                <constraint firstAttribute="trailing" secondItem="JhT-7U-KCb" secondAttribute="trailing" id="nFD-FM-xOq"/>
+                <constraint firstItem="JhT-7U-KCb" firstAttribute="width" secondItem="JhT-7U-KCb" secondAttribute="height" multiplier="16:9" id="yRW-ge-QIe"/>
+            </constraints>
         </view>
     </objects>
 </document>
