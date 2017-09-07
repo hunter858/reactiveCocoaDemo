@@ -16,6 +16,12 @@
 		E608526A1F2D9A3C00671793 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E60852681F2D9A3C00671793 /* LaunchScreen.storyboard */; };
 		E60852751F2D9A3D00671793 /* reactiveCocoaDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E60852741F2D9A3D00671793 /* reactiveCocoaDemoTests.m */; };
 		E60852801F2D9A3D00671793 /* reactiveCocoaDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E608527F1F2D9A3D00671793 /* reactiveCocoaDemoUITests.m */; };
+		E611EE221F6115AB00291DCD /* demo8Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E611EE201F6115AB00291DCD /* demo8Controller.m */; };
+		E611EE231F6115AB00291DCD /* demo8Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = E611EE211F6115AB00291DCD /* demo8Controller.xib */; };
+		E611EE271F6115BB00291DCD /* demo9Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E611EE251F6115BB00291DCD /* demo9Controller.m */; };
+		E611EE281F6115BB00291DCD /* demo9Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = E611EE261F6115BB00291DCD /* demo9Controller.xib */; };
+		E611EE2C1F6115D800291DCD /* demo10Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E611EE2A1F6115D800291DCD /* demo10Controller.m */; };
+		E611EE2D1F6115D800291DCD /* demo10Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = E611EE2B1F6115D800291DCD /* demo10Controller.xib */; };
 		E612150E1F3D9A6100D39B5A /* demo4Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E612150C1F3D9A6100D39B5A /* demo4Controller.m */; };
 		E612150F1F3D9A6100D39B5A /* demo4Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = E612150D1F3D9A6100D39B5A /* demo4Controller.xib */; };
 		E617A52A1F41DE7300C9D381 /* demo5Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E617A5281F41DE7300C9D381 /* demo5Controller.m */; };
@@ -24,6 +30,7 @@
 		E617A5331F41DE9100C9D381 /* demo6Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = E617A5311F41DE9100C9D381 /* demo6Controller.xib */; };
 		E617A5371F41DE9E00C9D381 /* demo7Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E617A5351F41DE9E00C9D381 /* demo7Controller.m */; };
 		E617A5381F41DE9E00C9D381 /* demo7Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = E617A5361F41DE9E00C9D381 /* demo7Controller.xib */; };
+		E61AE8D81F5D608600943F00 /* layerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E61AE8D71F5D608600943F00 /* layerButton.m */; };
 		E64E78D81F2DA7C800A52BD1 /* demo1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E64E78D61F2DA7C800A52BD1 /* demo1Controller.m */; };
 		E64E78D91F2DA7C800A52BD1 /* demo1Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = E64E78D71F2DA7C800A52BD1 /* demo1Controller.xib */; };
 		E64E78DD1F2DA7D700A52BD1 /* demo2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E64E78DB1F2DA7D700A52BD1 /* demo2Controller.m */; };
@@ -68,6 +75,15 @@
 		E608527B1F2D9A3D00671793 /* reactiveCocoaDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = reactiveCocoaDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E608527F1F2D9A3D00671793 /* reactiveCocoaDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = reactiveCocoaDemoUITests.m; sourceTree = "<group>"; };
 		E60852811F2D9A3D00671793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E611EE1F1F6115AB00291DCD /* demo8Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demo8Controller.h; sourceTree = "<group>"; };
+		E611EE201F6115AB00291DCD /* demo8Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = demo8Controller.m; sourceTree = "<group>"; };
+		E611EE211F6115AB00291DCD /* demo8Controller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = demo8Controller.xib; sourceTree = "<group>"; };
+		E611EE241F6115BB00291DCD /* demo9Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demo9Controller.h; sourceTree = "<group>"; };
+		E611EE251F6115BB00291DCD /* demo9Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = demo9Controller.m; sourceTree = "<group>"; };
+		E611EE261F6115BB00291DCD /* demo9Controller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = demo9Controller.xib; sourceTree = "<group>"; };
+		E611EE291F6115D800291DCD /* demo10Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demo10Controller.h; sourceTree = "<group>"; };
+		E611EE2A1F6115D800291DCD /* demo10Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = demo10Controller.m; sourceTree = "<group>"; };
+		E611EE2B1F6115D800291DCD /* demo10Controller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = demo10Controller.xib; sourceTree = "<group>"; };
 		E612150B1F3D9A6100D39B5A /* demo4Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demo4Controller.h; sourceTree = "<group>"; };
 		E612150C1F3D9A6100D39B5A /* demo4Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = demo4Controller.m; sourceTree = "<group>"; };
 		E612150D1F3D9A6100D39B5A /* demo4Controller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = demo4Controller.xib; sourceTree = "<group>"; };
@@ -80,6 +96,8 @@
 		E617A5341F41DE9E00C9D381 /* demo7Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demo7Controller.h; sourceTree = "<group>"; };
 		E617A5351F41DE9E00C9D381 /* demo7Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = demo7Controller.m; sourceTree = "<group>"; };
 		E617A5361F41DE9E00C9D381 /* demo7Controller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = demo7Controller.xib; sourceTree = "<group>"; };
+		E61AE8D61F5D608600943F00 /* layerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = layerButton.h; sourceTree = "<group>"; };
+		E61AE8D71F5D608600943F00 /* layerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = layerButton.m; sourceTree = "<group>"; };
 		E64E78D51F2DA7C800A52BD1 /* demo1Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demo1Controller.h; sourceTree = "<group>"; };
 		E64E78D61F2DA7C800A52BD1 /* demo1Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = demo1Controller.m; sourceTree = "<group>"; };
 		E64E78D71F2DA7C800A52BD1 /* demo1Controller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = demo1Controller.xib; sourceTree = "<group>"; };
@@ -160,6 +178,7 @@
 		E60852591F2D9A3C00671793 /* reactiveCocoaDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E61AE8D51F5D606C00943F00 /* New Group */,
 				E64E78D41F2D9F8400A52BD1 /* controlls */,
 				E608525D1F2D9A3C00671793 /* AppDelegate.h */,
 				E608525E1F2D9A3C00671793 /* AppDelegate.m */,
@@ -200,6 +219,16 @@
 			path = reactiveCocoaDemoUITests;
 			sourceTree = "<group>";
 		};
+		E61AE8D51F5D606C00943F00 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				E61AE8D61F5D608600943F00 /* layerButton.h */,
+				E61AE8D71F5D608600943F00 /* layerButton.m */,
+			);
+			name = "New Group";
+			path = controlls;
+			sourceTree = "<group>";
+		};
 		E64E78D41F2D9F8400A52BD1 /* controlls */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +253,15 @@
 				E617A5341F41DE9E00C9D381 /* demo7Controller.h */,
 				E617A5351F41DE9E00C9D381 /* demo7Controller.m */,
 				E617A5361F41DE9E00C9D381 /* demo7Controller.xib */,
+				E611EE1F1F6115AB00291DCD /* demo8Controller.h */,
+				E611EE201F6115AB00291DCD /* demo8Controller.m */,
+				E611EE211F6115AB00291DCD /* demo8Controller.xib */,
+				E611EE241F6115BB00291DCD /* demo9Controller.h */,
+				E611EE251F6115BB00291DCD /* demo9Controller.m */,
+				E611EE261F6115BB00291DCD /* demo9Controller.xib */,
+				E611EE291F6115D800291DCD /* demo10Controller.h */,
+				E611EE2A1F6115D800291DCD /* demo10Controller.m */,
+				E611EE2B1F6115D800291DCD /* demo10Controller.xib */,
 			);
 			path = controlls;
 			sourceTree = "<group>";
@@ -339,8 +377,11 @@
 			files = (
 				E64E78E31F2DA7E500A52BD1 /* demo3Controller.xib in Resources */,
 				E617A5331F41DE9100C9D381 /* demo6Controller.xib in Resources */,
+				E611EE281F6115BB00291DCD /* demo9Controller.xib in Resources */,
 				E608526A1F2D9A3C00671793 /* LaunchScreen.storyboard in Resources */,
+				E611EE2D1F6115D800291DCD /* demo10Controller.xib in Resources */,
 				E617A52B1F41DE7300C9D381 /* demo5Controller.xib in Resources */,
+				E611EE231F6115AB00291DCD /* demo8Controller.xib in Resources */,
 				E60852671F2D9A3C00671793 /* Assets.xcassets in Resources */,
 				E64E78D91F2DA7C800A52BD1 /* demo1Controller.xib in Resources */,
 				E617A5381F41DE9E00C9D381 /* demo7Controller.xib in Resources */,
@@ -440,11 +481,15 @@
 				E612150E1F3D9A6100D39B5A /* demo4Controller.m in Sources */,
 				E617A52A1F41DE7300C9D381 /* demo5Controller.m in Sources */,
 				E608525F1F2D9A3C00671793 /* AppDelegate.m in Sources */,
+				E611EE271F6115BB00291DCD /* demo9Controller.m in Sources */,
+				E611EE221F6115AB00291DCD /* demo8Controller.m in Sources */,
 				E64E78D81F2DA7C800A52BD1 /* demo1Controller.m in Sources */,
 				E64E78DD1F2DA7D700A52BD1 /* demo2Controller.m in Sources */,
 				E64E78E21F2DA7E500A52BD1 /* demo3Controller.m in Sources */,
 				E617A5321F41DE9100C9D381 /* demo6Controller.m in Sources */,
 				E608525C1F2D9A3C00671793 /* main.m in Sources */,
+				E61AE8D81F5D608600943F00 /* layerButton.m in Sources */,
+				E611EE2C1F6115D800291DCD /* demo10Controller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

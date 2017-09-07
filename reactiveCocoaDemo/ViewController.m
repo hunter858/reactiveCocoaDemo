@@ -69,7 +69,20 @@
         model7.subTitle = @"";
         model7.controller = @"demo7Controller";
         
-
+        viewModel *model8 = [[viewModel alloc]init];
+        model8.title = @"毛玻璃效果";
+        model8.subTitle = @"";
+        model8.controller = @"demo8Controller";
+        
+        viewModel *model9 = [[viewModel alloc]init];
+        model9.title = @"maskLayer + 核心动画";
+        model9.subTitle = @"";
+        model9.controller = @"demo9Controller";
+        
+        viewModel *model10 = [[viewModel alloc]init];
+        model10.title = @"maskLayer + 核心动画";
+        model10.subTitle = @"";
+        model10.controller = @"demo10Controller";
         
         _dataArray = @[model1,model2,model3,model4,model5,model6,model7].mutableCopy;
     }
