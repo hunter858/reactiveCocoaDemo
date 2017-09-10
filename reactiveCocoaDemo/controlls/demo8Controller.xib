@@ -14,9 +14,6 @@
             <connections>
                 <outlet property="Button1" destination="UJV-RS-t9C" id="70b-bp-nea"/>
                 <outlet property="Button2" destination="kCy-yL-fcA" id="IEe-rC-D8c"/>
-                <outlet property="Button3" destination="tyP-9m-9cE" id="0wf-Db-JwL"/>
-                <outlet property="Button4" destination="xbf-w5-w5j" id="mtC-ms-yal"/>
-                <outlet property="Button5" destination="ymE-nc-Mwe" id="tBO-uy-sLU"/>
                 <outlet property="imageView" destination="GAi-hg-lei" id="vvB-bO-PBm"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -41,28 +38,16 @@
                         <constraint firstAttribute="bottom" secondItem="GAi-hg-lei" secondAttribute="bottom" id="uGU-ui-Dxv"/>
                     </constraints>
                 </view>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IEe-WK-u65">
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IEe-WK-u65">
                     <rect key="frame" x="87" y="311" width="200" height="316"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJV-RS-t9C">
-                            <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
+                            <rect key="frame" x="22" y="0.0" width="156" height="153"/>
                             <state key="normal" title="CoreImage 实现毛玻璃"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCy-yL-fcA">
-                            <rect key="frame" x="0.0" y="71.5" width="200" height="30"/>
+                            <rect key="frame" x="10" y="163" width="180" height="153"/>
                             <state key="normal" title="UIVisualEffectView 毛玻璃"/>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyP-9m-9cE">
-                            <rect key="frame" x="0.0" y="143" width="200" height="30"/>
-                            <state key="normal" title="Button"/>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbf-w5-w5j">
-                            <rect key="frame" x="0.0" y="214.5" width="200" height="30"/>
-                            <state key="normal" title="Button"/>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymE-nc-Mwe">
-                            <rect key="frame" x="0.0" y="286" width="200" height="30"/>
-                            <state key="normal" title="Button"/>
                         </button>
                     </subviews>
                     <constraints>
