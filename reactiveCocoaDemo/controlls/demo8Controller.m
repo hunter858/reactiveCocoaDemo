@@ -109,7 +109,48 @@
     
 }
 -(void)demo3{
+//    /创建信号量/
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
+//    /创建全局并行/
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_group_async(group, queue, ^{
+        NSLog(@"处理事件A");
+        for (int i = 0; i<10000; i++) {
+            NSLog(@"打印i %d",i);
+        }
+        dispatch_semaphore_signal(semaphore);
+    });
+    dispatch_group_async(group, queue, ^{
+        NSLog(@"处理事件B");
+        for (int i = 0; i<10000; i++) {
+            NSLog(@"打印j %d",i);
+        }
+        dispatch_semaphore_signal(semaphore);
+    });
+    dispatch_group_async(group, queue, ^{
+        NSLog(@"处理事件C");
+        for (int i = 0; i<10000; i++) {
+            NSLog(@"打印k %d",i);
+        }
+        dispatch_semaphore_signal(semaphore);
+    });
+    dispatch_group_async(group, queue, ^{
+        NSLog(@"处理事件D");
+        for (int i = 0; i<10000; i++) {
+            NSLog(@"打印l %d",i);
+        }
+        dispatch_semaphore_signal(semaphore);
+    });
     
+    dispatch_group_notify(group, queue, ^{
+        //四个请求对应四次信号等待/
+        dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+        dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+        dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+        dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+        NSLog(@"处理事件E");
+    });
 }
 -(void)demo4{
     

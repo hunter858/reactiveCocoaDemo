@@ -102,11 +102,11 @@ const CGFloat startPointY = 40;
     
     
     CGPoint centerPoint = CGPointMake(20, 20); //圆的中心坐标
-    CGFloat width = 10;//圆的半径
+    CGFloat width = 30;//圆的半径
     CAShapeLayer *layer =[CAShapeLayer layer];//创建一个图层
     layer.frame = CGRectMake(centerPoint.x-10, centerPoint.y-10, 2*width, 2*width);
     layer.fillColor = [[UIColor redColor]CGColor]; //填充色
-    layer.path = [UIBezierPath bezierPathWithArcCenter:centerPoint radius:width startAngle:0 endAngle:M_PI*2 clockwise:YES].CGPath; //画圆的方法
+    layer.path = [UIBezierPath bezierPathWithArcCenter:centerPoint radius:width startAngle:0 endAngle:M_PI*1.5 clockwise:YES].CGPath; //画圆的方法
     //三个参数分别是 开始点，结束点 ，关闭
     
     [self.greenView1.layer addSublayer:layer];

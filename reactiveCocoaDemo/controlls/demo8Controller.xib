@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,6 +14,7 @@
             <connections>
                 <outlet property="Button1" destination="UJV-RS-t9C" id="70b-bp-nea"/>
                 <outlet property="Button2" destination="kCy-yL-fcA" id="IEe-rC-D8c"/>
+                <outlet property="Button3" destination="UA7-zU-ehl" id="xUR-bN-EMc"/>
                 <outlet property="imageView" destination="GAi-hg-lei" id="vvB-bO-PBm"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -42,12 +43,16 @@
                     <rect key="frame" x="87" y="311" width="200" height="316"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJV-RS-t9C">
-                            <rect key="frame" x="22" y="0.0" width="156" height="153"/>
+                            <rect key="frame" x="22" y="0.0" width="156" height="98.5"/>
                             <state key="normal" title="CoreImage 实现毛玻璃"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCy-yL-fcA">
-                            <rect key="frame" x="10" y="163" width="180" height="153"/>
+                            <rect key="frame" x="10" y="108.5" width="180" height="99"/>
                             <state key="normal" title="UIVisualEffectView 毛玻璃"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UA7-zU-ehl">
+                            <rect key="frame" x="58.5" y="217.5" width="83" height="98.5"/>
+                            <state key="normal" title="GCD 多线程"/>
                         </button>
                     </subviews>
                     <constraints>

@@ -67,8 +67,14 @@
         }
         
     }];
+    alertView.delegate =self;
     [alertView show];
 }
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    NSLog(@"%d",buttonIndex);
+}
+
 
 -(void)demo5{
     
