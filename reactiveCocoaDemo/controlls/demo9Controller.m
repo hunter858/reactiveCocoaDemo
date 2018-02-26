@@ -14,6 +14,12 @@
 @property (strong, nonatomic) IBOutlet UIButton *Button2;
 @property (strong, nonatomic) IBOutlet UIButton *Button3;
 @property (strong, nonatomic) IBOutlet UIButton *Button4;
+@property (strong, nonatomic) IBOutlet UIButton *Button5;
+@property (strong, nonatomic) IBOutlet UIButton *Button6;
+
+
+
+@property(strong,nonatomic) UILocalNotification *local_Notification;
 
 @property (copy) NSMutableArray *array;
 @property (strong) NSMutableArray *strongArray;
@@ -45,6 +51,12 @@
     }];
     [[self.Button4 rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
         [self demo4];
+    }];
+    [[self.Button5 rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
+        [self demo5];
+    }];
+    [[self.Button6 rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
+        [self demo6];
     }];
     
     
@@ -130,12 +142,30 @@
 }
 -(void)demo4{
     
+    /* AppDelegate 里有一些默认设置 */
+    self.local_Notification.fireDate =[NSDate dateWithTimeIntervalSinceNow:3];
+    self.local_Notification.alertBody = @"通知——显示的内容";
+    self.local_Notification.alertTitle=@"通知——现实的标题";
+    self.local_Notification.soundName =@"close.wav";
+    self.local_Notification.alertAction =@"锁屏状态下的通知内容";
+    self. local_Notification.applicationIconBadgeNumber = 3;
+    [[UIApplication sharedApplication]scheduleLocalNotification:self.local_Notification];
+}
+
+-(UILocalNotification *)local_Notification{
+    
+    if (_local_Notification ==nil) {
+        _local_Notification = [[UILocalNotification alloc]init];
+    }
+    return _local_Notification;
 }
 -(void)demo5{
-    
+    [[UIApplication sharedApplication]cancelLocalNotification:self.local_Notification];
 }
+
 -(void)demo6{
-    
+    /*  设置角标 */
+    [UIApplication sharedApplication].applicationIconBadgeNumber = 5;
 }
 
 
