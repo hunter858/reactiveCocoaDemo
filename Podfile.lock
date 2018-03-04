@@ -23,6 +23,7 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
+  - UITableView+FDTemplateLayoutCell (1.6)
 
 DEPENDENCIES:
   - AFNetworking
@@ -32,6 +33,7 @@ DEPENDENCIES:
   - ReactiveObjC
   - SDCycleScrollView (= 1.64)
   - SDWebImage
+  - UITableView+FDTemplateLayoutCell
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -41,7 +43,8 @@ SPEC CHECKSUMS:
   ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
   SDCycleScrollView: 806fedb9342ab03b58b84442f985517b42c7cbb7
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  UITableView+FDTemplateLayoutCell: 5c949b4a5059c404b442926c0e80f81d10a2d66f
 
-PODFILE CHECKSUM: 6d6e40e11fd0e98f2e024adb8da1b68d346dfa10
+PODFILE CHECKSUM: ec0ed3b3869b5ce2275602e2c8fee054546e5a05
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.4.0.beta.2
