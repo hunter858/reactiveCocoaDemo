@@ -34,12 +34,12 @@
         _dataArray = [NSMutableArray array];
         
         viewModel *model1 = [[viewModel alloc]init];
-        model1.title = @"demo1";
+        model1.title = @"UIButton 和UIButton 相应事件";
         model1.subTitle = @"demo1";
         model1.controller = @"demo1Controller";
         
         viewModel *model2= [[viewModel alloc]init];
-        model2.title = @"demo2";
+        model2.title = @"RAC 协议支持";
         model2.subTitle = @"demo3";
         model2.controller = @"demo2Controller";
         
@@ -56,12 +56,12 @@
         
         viewModel *model5 = [[viewModel alloc]init];
         model5.title = @"demo5";
-        model5.subTitle = @"";
+        model5.subTitle = @"深复制-浅复制";
         model5.controller = @"demo5Controller";
         
         viewModel *model6 = [[viewModel alloc]init];
         model6.title = @"demo6";
-        model6.subTitle = @"";
+        model6.subTitle = @"ios事件传递响应链";
         model6.controller = @"demo6Controller";
         
         viewModel *model7 = [[viewModel alloc]init];
@@ -71,12 +71,12 @@
         
         viewModel *model8 = [[viewModel alloc]init];
         model8.title = @"毛玻璃效果";
-        model8.subTitle = @"";
+        model8.subTitle = @"毛玻璃的三种创建方法";
         model8.controller = @"demo8Controller";
         
         viewModel *model9 = [[viewModel alloc]init];
         model9.title = @"demo9";
-        model9.subTitle = @"";
+        model9.subTitle = @"copy属性 本地通知注册";
         model9.controller = @"demo9Controller";
         
         viewModel *model10 = [[viewModel alloc]init];

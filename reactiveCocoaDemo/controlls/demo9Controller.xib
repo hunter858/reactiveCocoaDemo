@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,6 +15,8 @@
                 <outlet property="Button2" destination="BOg-xG-VCD" id="ZDN-Tf-OWe"/>
                 <outlet property="Button3" destination="F7N-1L-eZ1" id="NGq-KQ-BMq"/>
                 <outlet property="Button4" destination="3bD-rU-JHH" id="YBg-YZ-sXS"/>
+                <outlet property="Button5" destination="RZs-uG-hoC" id="nh7-yx-tdn"/>
+                <outlet property="Button6" destination="f4P-v2-JIb" id="bNY-QN-xQe"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -24,36 +26,45 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4HE-jY-Xx6">
-                    <rect key="frame" x="116" y="60" width="200" height="200"/>
+                    <rect key="frame" x="87.5" y="60" width="200" height="400"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIt-3L-TU8">
-                            <rect key="frame" x="50.5" y="0.0" width="99" height="50"/>
+                            <rect key="frame" x="50.5" y="0.0" width="99" height="66.5"/>
                             <state key="normal" title="copy 属性用法"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOg-xG-VCD">
-                            <rect key="frame" x="31" y="50" width="138" height="50"/>
+                            <rect key="frame" x="31" y="66.5" width="138" height="67"/>
                             <state key="normal" title="synchronized线程锁"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7N-1L-eZ1">
-                            <rect key="frame" x="45" y="100" width="110" height="50"/>
+                            <rect key="frame" x="45" y="133.5" width="110" height="66.5"/>
                             <state key="normal" title="strong 属性用法"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bD-rU-JHH">
-                            <rect key="frame" x="77" y="150" width="46" height="50"/>
-                            <state key="normal" title="Button"/>
+                            <rect key="frame" x="54" y="200" width="92" height="66.5"/>
+                            <state key="normal" title="注册本地通知"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZs-uG-hoC">
+                            <rect key="frame" x="54" y="266.5" width="92" height="67"/>
+                            <state key="normal" title="取消本地通知"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4P-v2-JIb">
+                            <rect key="frame" x="48.5" y="333.5" width="103" height="66.5"/>
+                            <state key="normal" title="设置app的角标"/>
                         </button>
                     </subviews>
                     <constraints>
                         <constraint firstAttribute="width" constant="200" id="2IJ-dm-yP2"/>
-                        <constraint firstAttribute="height" constant="200" id="41X-bS-QlE"/>
+                        <constraint firstAttribute="height" constant="400" id="41X-bS-QlE"/>
                     </constraints>
                 </stackView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="4HE-jY-Xx6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="pi4-uT-Jx1"/>
-                <constraint firstItem="4HE-jY-Xx6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="116" id="xXy-TE-nVL"/>
+                <constraint firstItem="4HE-jY-Xx6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="JYS-ih-UTo"/>
+                <constraint firstItem="4HE-jY-Xx6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="c1p-xw-VCc"/>
             </constraints>
+            <point key="canvasLocation" x="-172" y="59"/>
         </view>
     </objects>
 </document>

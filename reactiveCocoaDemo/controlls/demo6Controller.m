@@ -36,7 +36,14 @@
 
 -(void)tapView:(UIView *)view{
     NSLog(@"点击了");
-    
+    /*
+     如果父控件不能接受触摸事件，子控件就不可能接受到触摸事件；
+     
+     UIView 不能接收触摸事件的三种情况
+     1.不允许交互 UserInterfactionEnabled = NO；
+     2.隐藏，隐藏的控件不能接受事件
+     3.
+     */
 }
 
 - (void)didReceiveMemoryWarning {

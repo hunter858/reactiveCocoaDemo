@@ -17,6 +17,24 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    /* ios 8 以后，推送需要征求用户同意 */
+    UIUserNotificationSettings *setting =[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeSound|UIUserNotificationTypeBadge categories:nil];
+    
+    [application registerForRemoteNotifications];
+
+    
+    if (launchOptions) {
+        /*
+         App 死掉的情况下，点击通知，添加一个label
+         */
+        UILabel *label =[[UILabel alloc]init];
+        label.backgroundColor =[UIColor whiteColor];
+        label.frame = CGRectMake(0, 0, 300, 60);
+        label.center = CGPointMake([UIScreen mainScreen].bounds.size.width/2, [UIScreen mainScreen].bounds.size.height/2-200);
+        label.text = @"请把app 关闭到后台 查看角标是否清除";
+        
+    }
     return YES;
 }
 
@@ -26,6 +44,15 @@
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
 }
 
+
+
+-(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
+    
+    /* 看方法名 ，收到本地通知的方法处理 */
+    
+    application.applicationIconBadgeNumber = 0;
+    
+}
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.

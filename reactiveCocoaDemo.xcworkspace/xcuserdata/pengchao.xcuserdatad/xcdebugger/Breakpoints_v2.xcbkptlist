@@ -20,27 +20,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "reactiveCocoaDemo/controlls/demo5Controller.m"
-            timestampString = "528022234.92716"
+            timestampString = "540980603.131187"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "93"
             endingLineNumber = "93"
-            landmarkName = "-demo3"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "reactiveCocoaDemo/controlls/demo8Controller.m"
-            timestampString = "529308375.878473"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "152"
-            endingLineNumber = "152"
             landmarkName = "-demo3"
             landmarkType = "7">
          </BreakpointContent>
@@ -104,13 +88,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "reactiveCocoaDemo/controlls/demo9Controller.m"
-            timestampString = "541435492.356351"
+            filePath = "reactiveCocoaDemo/controlls/demo7Controller.m"
+            timestampString = "540981062.748498"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
-            landmarkName = "-demo3"
+            startingLineNumber = "521"
+            endingLineNumber = "521"
+            landmarkName = "-demo9"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -121,28 +105,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "reactiveCocoaDemo/controlls/demo9Controller.m"
-            timestampString = "541435492.357465"
+            timestampString = "541304710.82688"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
-            landmarkName = "-demo3"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "reactiveCocoaDemo/controlls/demo9Controller.m"
-            timestampString = "541435492.358005"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
-            landmarkName = "-demo3"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
+            landmarkName = "-demo4"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
