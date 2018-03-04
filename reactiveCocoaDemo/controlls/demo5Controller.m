@@ -18,6 +18,10 @@
 @property (strong, nonatomic) IBOutlet UIButton *Button7;
 @property (strong, nonatomic) IBOutlet UIButton *Button8;
 
+
+@property (nonatomic,strong)NSString *strongString;
+@property (nonatomic,copy)NSString *CopyString;
+
 @end
 
 @implementation demo5Controller
@@ -86,8 +90,30 @@
 
 -(void)demo3{
     
+    NSMutableString *mutableStirng = [NSMutableString stringWithString:@"123"];
+    self.CopyString = mutableStirng;
+    self.strongString = mutableStirng;
+    NSLog(@"======cString:%@   sStrong:%@=====",self.CopyString,self.strongString);
+    
+    //改变mutableString的值，打印输出 self.copyedString,self.strongString
+    [mutableStirng insertString:@"456" atIndex:3];
+    NSLog(@"======cString:%@   sStrong:%@=====",self.CopyString,self.strongString);
+    /*
+     mutableString的值改变了，用strong修饰的时候，strongString的值也跟着改变了，因为strongString和mutableString指向相同的内存地址；用copy修饰NSString的时候是浅复制，相当于把mutableString内存复制了一份给了copyedString，它们两个指向的内存并不相同，当mutableString的内存地址发生改变时并不会影响copyedString的值；
+     如果是将NSString *string赋值给 self.copyedString,self.strongString 的情况下，用strong和weak没有区别，个人习惯用copy。
+     
+     一句话：如果希望你是的sting要跟着赋值给你的那个string 改变，就用strong；如果希望你的sting保持不变，用weak；一般情况下都是希望string保持不变的，所以大部分情况用的是copy。
+     */
 }
 -(void)demo4{
+ 
+    /*数组的循环引用*/
+    
+    NSMutableArray *array1  =[NSMutableArray array];
+    NSMutableArray *array2  =[NSMutableArray array];
+    
+    [array1 addObject:array2];
+    [array2 addObject:array1];
     
 }
 -(void)demo5{

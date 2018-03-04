@@ -1,12 +1,24 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="demo10Controller">
             <connections>
+                <outlet property="Button1" destination="h1V-Dz-2Av" id="xg5-Rd-oD8"/>
+                <outlet property="Button2" destination="dMz-qb-IGD" id="3d7-SD-2ru"/>
+                <outlet property="Button3" destination="WM8-CA-i69" id="JAg-bZ-YeI"/>
+                <outlet property="Button4" destination="FLA-n4-vEc" id="3hQ-FU-qxw"/>
+                <outlet property="Button5" destination="0RE-0b-nze" id="Cv0-F7-Zvh"/>
+                <outlet property="Button6" destination="TwS-pT-yzb" id="rrv-kZ-xgg"/>
+                <outlet property="Button7" destination="TUI-yO-1BQ" id="eff-7K-3sd"/>
+                <outlet property="Button8" destination="asG-WB-RnS" id="8G9-m1-ldf"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +26,57 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Py5-aa-brG">
+                    <rect key="frame" x="104" y="64" width="167" height="539"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1V-Dz-2Av">
+                            <rect key="frame" x="60.5" y="0.0" width="46" height="30"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMz-qb-IGD">
+                            <rect key="frame" x="60.5" y="63.5" width="46" height="30"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WM8-CA-i69">
+                            <rect key="frame" x="60.5" y="127.5" width="46" height="30"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLA-n4-vEc">
+                            <rect key="frame" x="60.5" y="191" width="46" height="30"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0RE-0b-nze">
+                            <rect key="frame" x="60.5" y="254.5" width="46" height="30"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TwS-pT-yzb">
+                            <rect key="frame" x="60.5" y="318" width="46" height="30"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUI-yO-1BQ">
+                            <rect key="frame" x="60.5" y="382" width="46" height="30"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asG-WB-RnS">
+                            <rect key="frame" x="60.5" y="445.5" width="46" height="30"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GzT-gP-sb6">
+                            <rect key="frame" x="60.5" y="509" width="46" height="30"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Py5-aa-brG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8hG-is-qUp"/>
+                <constraint firstItem="Py5-aa-brG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="F7j-iL-3ta"/>
+                <constraint firstItem="Py5-aa-brG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="104" id="HZa-kA-Tgf"/>
+                <constraint firstItem="Py5-aa-brG" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="k81-aN-LBh"/>
+            </constraints>
+            <point key="canvasLocation" x="-56" y="101"/>
         </view>
     </objects>
 </document>

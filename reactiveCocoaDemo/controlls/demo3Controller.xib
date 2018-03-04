@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -28,43 +28,43 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="RQF-mI-QrA">
-                    <rect key="frame" x="18" y="60" width="339" height="607"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="RQF-mI-QrA">
+                    <rect key="frame" x="18" y="60" width="339" height="567"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tX-rr-2tD">
-                            <rect key="frame" x="94" y="0.0" width="151" height="63"/>
+                            <rect key="frame" x="94" y="0.0" width="151" height="62"/>
                             <state key="normal" title="1.并行队列 + 同步执行"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxf-ho-tSA">
-                            <rect key="frame" x="93" y="68" width="153" height="63"/>
+                            <rect key="frame" x="93" y="63" width="153" height="62"/>
                             <state key="normal" title="2.并行队列 + 异步执行"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nsz-Ve-NhF">
-                            <rect key="frame" x="93" y="136" width="153" height="63"/>
+                            <rect key="frame" x="93" y="126" width="153" height="62.5"/>
                             <state key="normal" title="3.串行队列 + 同步执行"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEH-RV-sU8">
-                            <rect key="frame" x="92.5" y="204" width="154" height="63"/>
+                            <rect key="frame" x="92.5" y="189.5" width="154" height="62"/>
                             <state key="normal" title="4.串行队列 + 异步执行"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wy0-Cb-O5I">
-                            <rect key="frame" x="100.5" y="272" width="138" height="63"/>
+                            <rect key="frame" x="100.5" y="252.5" width="138" height="62"/>
                             <state key="normal" title="5.主线程 + 异步队列"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LmU-s4-KgL">
-                            <rect key="frame" x="109" y="340" width="121" height="63"/>
+                            <rect key="frame" x="109" y="315.5" width="121" height="62"/>
                             <state key="normal" title="6.线程之间的通信"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJt-TT-Cla">
-                            <rect key="frame" x="78.5" y="408" width="182" height="63"/>
+                            <rect key="frame" x="78.5" y="378.5" width="182" height="62.5"/>
                             <state key="normal" title="7.dispatch_group 简单使用"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqb-I1-148">
-                            <rect key="frame" x="64.5" y="476" width="210" height="63"/>
+                            <rect key="frame" x="64.5" y="442" width="210" height="62"/>
                             <state key="normal" title="8.Afnetworking 网络请求group"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLu-jP-TTk">
-                            <rect key="frame" x="146.5" y="544" width="46" height="63"/>
+                            <rect key="frame" x="146.5" y="505" width="46" height="62"/>
                             <state key="normal" title="Button"/>
                         </button>
                     </subviews>
@@ -74,7 +74,7 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="RQF-mI-QrA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="18" id="4m9-CA-fwc"/>
-                <constraint firstAttribute="bottom" secondItem="RQF-mI-QrA" secondAttribute="bottom" id="NTa-2a-tYE"/>
+                <constraint firstAttribute="bottom" secondItem="RQF-mI-QrA" secondAttribute="bottom" constant="40" id="NTa-2a-tYE"/>
                 <constraint firstAttribute="trailing" secondItem="RQF-mI-QrA" secondAttribute="trailing" constant="18" id="cZU-8q-edx"/>
                 <constraint firstItem="RQF-mI-QrA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="pyg-kG-ukq"/>
             </constraints>

@@ -8,5 +8,6 @@ pod 'SDWebImage'
 pod 'JSONModel'
 pod 'ReactiveObjC'
 pod 'SDCycleScrollView', ' 1.64'
-
+pod 'MvvmComponents'
+pod 'UITableView+FDTemplateLayoutCell'
 end
