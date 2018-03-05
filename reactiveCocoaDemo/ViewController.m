@@ -86,11 +86,20 @@
         
         
         viewModel *model11 = [[viewModel alloc]init];
-        model10.title = @"demo10";
-        model10.subTitle = @"";
-        model10.controller = @"demo11ViewController";
+        model11.title = @"demo11";
+        model11.subTitle = @"";
+        model11.controller = @"demo11ViewController";
         
-        _dataArray = @[model1,model2,model3,model4,model5,model6,model7,model8,model9,model10].mutableCopy;
+        
+        viewModel *model12 = [[viewModel alloc]init];
+        model12.title = @"demo12";
+        model12.subTitle = @"";
+        model12.controller = @"demo12Controller";
+        
+        
+        
+        
+        _dataArray = @[model1,model2,model3,model4,model5,model6,model7,model8,model9,model10,model11,model12].mutableCopy;
     }
     return _dataArray;
 }

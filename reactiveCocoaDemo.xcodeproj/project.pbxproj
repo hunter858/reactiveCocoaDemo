@@ -16,6 +16,12 @@
 		E608526A1F2D9A3C00671793 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E60852681F2D9A3C00671793 /* LaunchScreen.storyboard */; };
 		E60852751F2D9A3D00671793 /* reactiveCocoaDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E60852741F2D9A3D00671793 /* reactiveCocoaDemoTests.m */; };
 		E60852801F2D9A3D00671793 /* reactiveCocoaDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E608527F1F2D9A3D00671793 /* reactiveCocoaDemoUITests.m */; };
+		E60CE123204D3EEC00249347 /* demo12Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E60CE121204D3EEC00249347 /* demo12Controller.m */; };
+		E60CE124204D3EEC00249347 /* demo12Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = E60CE122204D3EEC00249347 /* demo12Controller.xib */; };
+		E60CE128204D3FBF00249347 /* sunny2TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E60CE126204D3FBF00249347 /* sunny2TableViewCell.m */; };
+		E60CE129204D3FBF00249347 /* sunny2TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E60CE127204D3FBF00249347 /* sunny2TableViewCell.xib */; };
+		E60CE12C204D3FD100249347 /* sunny2Model.m in Sources */ = {isa = PBXBuildFile; fileRef = E60CE12B204D3FD100249347 /* sunny2Model.m */; };
+		E60CE12E204D443E00249347 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = E60CE12D204D443E00249347 /* data.json */; };
 		E611EE221F6115AB00291DCD /* demo8Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E611EE201F6115AB00291DCD /* demo8Controller.m */; };
 		E611EE231F6115AB00291DCD /* demo8Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = E611EE211F6115AB00291DCD /* demo8Controller.xib */; };
 		E611EE271F6115BB00291DCD /* demo9Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E611EE251F6115BB00291DCD /* demo9Controller.m */; };
@@ -79,6 +85,15 @@
 		E608527B1F2D9A3D00671793 /* reactiveCocoaDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = reactiveCocoaDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E608527F1F2D9A3D00671793 /* reactiveCocoaDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = reactiveCocoaDemoUITests.m; sourceTree = "<group>"; };
 		E60852811F2D9A3D00671793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E60CE120204D3EEC00249347 /* demo12Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = demo12Controller.h; sourceTree = "<group>"; };
+		E60CE121204D3EEC00249347 /* demo12Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = demo12Controller.m; sourceTree = "<group>"; };
+		E60CE122204D3EEC00249347 /* demo12Controller.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = demo12Controller.xib; sourceTree = "<group>"; };
+		E60CE125204D3FBF00249347 /* sunny2TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sunny2TableViewCell.h; sourceTree = "<group>"; };
+		E60CE126204D3FBF00249347 /* sunny2TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sunny2TableViewCell.m; sourceTree = "<group>"; };
+		E60CE127204D3FBF00249347 /* sunny2TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = sunny2TableViewCell.xib; sourceTree = "<group>"; };
+		E60CE12A204D3FD100249347 /* sunny2Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sunny2Model.h; sourceTree = "<group>"; };
+		E60CE12B204D3FD100249347 /* sunny2Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sunny2Model.m; sourceTree = "<group>"; };
+		E60CE12D204D443E00249347 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		E611EE1F1F6115AB00291DCD /* demo8Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demo8Controller.h; sourceTree = "<group>"; };
 		E611EE201F6115AB00291DCD /* demo8Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = demo8Controller.m; sourceTree = "<group>"; };
 		E611EE211F6115AB00291DCD /* demo8Controller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = demo8Controller.xib; sourceTree = "<group>"; };
@@ -239,6 +254,12 @@
 				E6FD67EB2045A59B00129C63 /* Father.m */,
 				E6FD67ED2045A5AE00129C63 /* Son.h */,
 				E6FD67EE2045A5AE00129C63 /* Son.m */,
+				E60CE125204D3FBF00249347 /* sunny2TableViewCell.h */,
+				E60CE126204D3FBF00249347 /* sunny2TableViewCell.m */,
+				E60CE127204D3FBF00249347 /* sunny2TableViewCell.xib */,
+				E60CE12A204D3FD100249347 /* sunny2Model.h */,
+				E60CE12B204D3FD100249347 /* sunny2Model.m */,
+				E60CE12D204D443E00249347 /* data.json */,
 			);
 			name = "New Group";
 			path = controlls;
@@ -280,6 +301,9 @@
 				E6CB68F2204BC03200D8981A /* demo11ViewController.h */,
 				E6CB68F3204BC03200D8981A /* demo11ViewController.m */,
 				E6CB68F4204BC03200D8981A /* demo11ViewController.xib */,
+				E60CE120204D3EEC00249347 /* demo12Controller.h */,
+				E60CE121204D3EEC00249347 /* demo12Controller.m */,
+				E60CE122204D3EEC00249347 /* demo12Controller.xib */,
 			);
 			path = controlls;
 			sourceTree = "<group>";
@@ -398,10 +422,13 @@
 				E611EE281F6115BB00291DCD /* demo9Controller.xib in Resources */,
 				E608526A1F2D9A3C00671793 /* LaunchScreen.storyboard in Resources */,
 				E611EE2D1F6115D800291DCD /* demo10Controller.xib in Resources */,
+				E60CE124204D3EEC00249347 /* demo12Controller.xib in Resources */,
 				E617A52B1F41DE7300C9D381 /* demo5Controller.xib in Resources */,
 				E611EE231F6115AB00291DCD /* demo8Controller.xib in Resources */,
 				E6CB68F6204BC03200D8981A /* demo11ViewController.xib in Resources */,
 				E60852671F2D9A3C00671793 /* Assets.xcassets in Resources */,
+				E60CE12E204D443E00249347 /* data.json in Resources */,
+				E60CE129204D3FBF00249347 /* sunny2TableViewCell.xib in Resources */,
 				E64E78D91F2DA7C800A52BD1 /* demo1Controller.xib in Resources */,
 				E617A5381F41DE9E00C9D381 /* demo7Controller.xib in Resources */,
 				E64E78DE1F2DA7D700A52BD1 /* demo2Controller.xib in Resources */,
@@ -506,10 +533,13 @@
 				E617A52A1F41DE7300C9D381 /* demo5Controller.m in Sources */,
 				E6FD67EC2045A59B00129C63 /* Father.m in Sources */,
 				E608525F1F2D9A3C00671793 /* AppDelegate.m in Sources */,
+				E60CE123204D3EEC00249347 /* demo12Controller.m in Sources */,
 				E611EE271F6115BB00291DCD /* demo9Controller.m in Sources */,
 				E611EE221F6115AB00291DCD /* demo8Controller.m in Sources */,
 				E64E78D81F2DA7C800A52BD1 /* demo1Controller.m in Sources */,
 				E64E78DD1F2DA7D700A52BD1 /* demo2Controller.m in Sources */,
+				E60CE12C204D3FD100249347 /* sunny2Model.m in Sources */,
+				E60CE128204D3FBF00249347 /* sunny2TableViewCell.m in Sources */,
 				E64E78E21F2DA7E500A52BD1 /* demo3Controller.m in Sources */,
 				E617A5321F41DE9100C9D381 /* demo6Controller.m in Sources */,
 				E6CB68F5204BC03200D8981A /* demo11ViewController.m in Sources */,
