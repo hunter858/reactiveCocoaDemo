@@ -10,9 +10,14 @@
 #import "ReactiveObjC.h"
 #import "Son.h"
 
+typedef  void(^myBlock)();
 
 @interface demo10Controller ()
 
+
+@property (copy,nonatomic) myBlock myBlock;
+
+@property (weak, nonatomic) IBOutlet UILabel *showLabel;
 @property (strong, nonatomic) IBOutlet UIButton *Button1;
 @property (strong, nonatomic) IBOutlet UIButton *Button2;
 @property (strong, nonatomic) IBOutlet UIButton *Button3;
@@ -64,11 +69,34 @@
 
 -(void)demo1{
     Son *son_one = [[Son alloc]init];
+    
+    
 }
 -(void)demo2{
+    /*
+     调用系统的api 能使用控制器 正常dealloc 说明没有发生循环引用
+     */
+    
+    self.showLabel.text = @"调用系统的api 能使用控制器 正常dealloc 说明没有发生循环引用";
+    
+    [UIView animateWithDuration:1.0 animations:^{
+        NSLog(@"self.view:%@",self.view);
+    }];
     
 }
 -(void)demo3{
+    /*
+     自定义Block 发生循环引用
+     
+     系统提示: Capturing 'self' strongly in this block is likely to lead to a retain cycle
+     */
+    self.showLabel.text = @"自定义Block 发生循环引用 \n 系统提示: Capturing 'self' strongly in this block is likely to lead to a retain cycle";
+    
+    
+    _myBlock =^{
+      
+        NSLog(@"self.view:%@",self.view);
+    };
     
 }
 -(void)demo4{
@@ -85,6 +113,13 @@
 }
 -(void)demo8{
     
+}
+
+-(void)dealloc{
+    /*
+     看是否会调用 dealloc 方法
+     */
+    NSLog(@"%s--> oneVC -dealloc",__func__);
 }
 
 - (void)didReceiveMemoryWarning {

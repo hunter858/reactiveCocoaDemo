@@ -31,13 +31,15 @@
     self.Content.text = entity.content;
     self.showImageView.image = entity.imageName.length > 0 ? [UIImage imageNamed:entity.imageName] : nil;;
     
-//    if (!(entity.imageName.length>0)) {
-//        self.showImageView removeFromSuperview
-//    }
+    
+    
+    if (!(entity.imageName.length>0)) {
+        self.showImageView.frame = CGRectMake(0, 0, 0, 0);
+    }
     
     self.userName.text = entity.username;
     self.useDate.text = entity.time;
-    
+    [self layoutSubviews];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

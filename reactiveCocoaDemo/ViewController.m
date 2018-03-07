@@ -7,7 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "DefaultTableViewCell.h"
 
+
+static NSString *identifier = @"DefaultTableViewCell";
 
 @implementation viewModel
 @end
@@ -21,11 +24,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.MyTableView.tableFooterView  =[[UIView alloc]init];
     self.MyTableView.delegate = self;
     self.MyTableView.dataSource = self;
-    self.dataArray;
     
+    [self.MyTableView registerNib:[UINib nibWithNibName:@"DefaultTableViewCell" bundle:nil] forCellReuseIdentifier:identifier];
+    self.MyTableView.estimatedRowHeight = 80;
     
 }
 
@@ -93,12 +98,10 @@
         
         viewModel *model12 = [[viewModel alloc]init];
         model12.title = @"demo12";
-        model12.subTitle = @"";
+        model12.subTitle = @"UITableView+FDTemplateLayoutCell 适配不同cell 案例";
         model12.controller = @"demo12Controller";
         
-        
-        
-        
+
         _dataArray = @[model1,model2,model3,model4,model5,model6,model7,model8,model9,model10,model11,model12].mutableCopy;
     }
     return _dataArray;
@@ -111,18 +114,21 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    static NSString *ID  = @"identifier";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    DefaultTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (!cell) {
-        cell  =[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:ID];
+        cell  =[[DefaultTableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifier];
     }
     
     viewModel *model = self.dataArray[indexPath.row];
-    cell.textLabel.text = model.title;
-    cell.detailTextLabel.text = model.subTitle;
+    [cell setTitle:model.title subTitle:model.subTitle];
     return cell;
     
+}
+
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 70;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

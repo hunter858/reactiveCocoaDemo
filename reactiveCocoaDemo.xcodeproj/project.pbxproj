@@ -22,6 +22,8 @@
 		E60CE129204D3FBF00249347 /* sunny2TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E60CE127204D3FBF00249347 /* sunny2TableViewCell.xib */; };
 		E60CE12C204D3FD100249347 /* sunny2Model.m in Sources */ = {isa = PBXBuildFile; fileRef = E60CE12B204D3FD100249347 /* sunny2Model.m */; };
 		E60CE12E204D443E00249347 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = E60CE12D204D443E00249347 /* data.json */; };
+		E60CE133204FB2F300249347 /* DefaultTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E60CE131204FB2F300249347 /* DefaultTableViewCell.m */; };
+		E60CE134204FB2F300249347 /* DefaultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E60CE132204FB2F300249347 /* DefaultTableViewCell.xib */; };
 		E611EE221F6115AB00291DCD /* demo8Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E611EE201F6115AB00291DCD /* demo8Controller.m */; };
 		E611EE231F6115AB00291DCD /* demo8Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = E611EE211F6115AB00291DCD /* demo8Controller.xib */; };
 		E611EE271F6115BB00291DCD /* demo9Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E611EE251F6115BB00291DCD /* demo9Controller.m */; };
@@ -94,6 +96,9 @@
 		E60CE12A204D3FD100249347 /* sunny2Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sunny2Model.h; sourceTree = "<group>"; };
 		E60CE12B204D3FD100249347 /* sunny2Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sunny2Model.m; sourceTree = "<group>"; };
 		E60CE12D204D443E00249347 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		E60CE130204FB2F300249347 /* DefaultTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultTableViewCell.h; sourceTree = "<group>"; };
+		E60CE131204FB2F300249347 /* DefaultTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefaultTableViewCell.m; sourceTree = "<group>"; };
+		E60CE132204FB2F300249347 /* DefaultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultTableViewCell.xib; sourceTree = "<group>"; };
 		E611EE1F1F6115AB00291DCD /* demo8Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demo8Controller.h; sourceTree = "<group>"; };
 		E611EE201F6115AB00291DCD /* demo8Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = demo8Controller.m; sourceTree = "<group>"; };
 		E611EE211F6115AB00291DCD /* demo8Controller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = demo8Controller.xib; sourceTree = "<group>"; };
@@ -204,6 +209,7 @@
 		E60852591F2D9A3C00671793 /* reactiveCocoaDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E60CE12F204FB2D200249347 /* View */,
 				E61AE8D51F5D606C00943F00 /* New Group */,
 				E64E78D41F2D9F8400A52BD1 /* controlls */,
 				E608525D1F2D9A3C00671793 /* AppDelegate.h */,
@@ -243,6 +249,16 @@
 				E60852811F2D9A3D00671793 /* Info.plist */,
 			);
 			path = reactiveCocoaDemoUITests;
+			sourceTree = "<group>";
+		};
+		E60CE12F204FB2D200249347 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E60CE130204FB2F300249347 /* DefaultTableViewCell.h */,
+				E60CE131204FB2F300249347 /* DefaultTableViewCell.m */,
+				E60CE132204FB2F300249347 /* DefaultTableViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		E61AE8D51F5D606C00943F00 /* New Group */ = {
@@ -432,6 +448,7 @@
 				E64E78D91F2DA7C800A52BD1 /* demo1Controller.xib in Resources */,
 				E617A5381F41DE9E00C9D381 /* demo7Controller.xib in Resources */,
 				E64E78DE1F2DA7D700A52BD1 /* demo2Controller.xib in Resources */,
+				E60CE134204FB2F300249347 /* DefaultTableViewCell.xib in Resources */,
 				E612150F1F3D9A6100D39B5A /* demo4Controller.xib in Resources */,
 				E60852651F2D9A3C00671793 /* Main.storyboard in Resources */,
 			);
@@ -541,6 +558,7 @@
 				E60CE12C204D3FD100249347 /* sunny2Model.m in Sources */,
 				E60CE128204D3FBF00249347 /* sunny2TableViewCell.m in Sources */,
 				E64E78E21F2DA7E500A52BD1 /* demo3Controller.m in Sources */,
+				E60CE133204FB2F300249347 /* DefaultTableViewCell.m in Sources */,
 				E617A5321F41DE9100C9D381 /* demo6Controller.m in Sources */,
 				E6CB68F5204BC03200D8981A /* demo11ViewController.m in Sources */,
 				E608525C1F2D9A3C00671793 /* main.m in Sources */,
