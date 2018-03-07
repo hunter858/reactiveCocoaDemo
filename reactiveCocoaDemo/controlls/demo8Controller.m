@@ -23,25 +23,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
+    __weak typeof(self) weakself = self;
     self.imageView.image = [UIImage imageNamed:@"photoFile"];
     self.imageView.contentMode = UIViewContentModeScaleAspectFit;
     
     [[self.Button1 rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
-        [self demo1];
+        [weakself demo1];
     }];
 
     [[self.Button2 rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
-        [self demo2];
+        [weakself demo2];
     }];
     [[self.Button3 rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
-        [self demo3];
+        [weakself demo3];
     }];
     [[self.Button4 rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
-        [self demo4];
+        [weakself demo4];
     }];
     [[self.Button5 rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
-        [self demo5];
+        [weakself demo5];
     }];
 }
 

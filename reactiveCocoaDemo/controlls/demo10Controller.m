@@ -35,31 +35,33 @@ typedef  void(^myBlock)();
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
+    __weak typeof(self) weakself = self;
+    
     [[self.Button1 rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
-        [self demo1];
+        [weakself demo1];
     }];
     
     [[self.Button2 rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
-        [self demo2];
+        [weakself demo2];
     }];
     
     [[self.Button3 rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
-        [self demo3];
+        [weakself demo3];
     }];
     [[self.Button4 rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
-        [self demo4];
+        [weakself demo4];
     }];
     [[self.Button5 rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
-        [self demo5];
+        [weakself demo5];
     }];
     [[self.Button6 rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
-        [self demo6];
+        [weakself demo6];
     }];
     [[self.Button7 rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
-        [self demo7];
+        [weakself demo7];
     }];
     [[self.Button8 rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
-        [self demo8];
+        [weakself demo8];
     }];
     
     
@@ -92,9 +94,7 @@ typedef  void(^myBlock)();
      */
     self.showLabel.text = @"自定义Block 发生循环引用 \n 系统提示: Capturing 'self' strongly in this block is likely to lead to a retain cycle";
     
-    
     _myBlock =^{
-      
         NSLog(@"self.view:%@",self.view);
     };
     

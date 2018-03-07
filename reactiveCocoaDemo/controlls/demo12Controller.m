@@ -86,11 +86,6 @@
     
     sunny2TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FDFeedCell"];
     [self configureCell:cell atIndexPath:indexPath];
-    
-    
-//    if (cell ==nil) {
-//        cell =[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"FDFeedCell"];
-//    }
     return cell;
 }
 
@@ -103,8 +98,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    __weak typeof(self) weakself = self;
-    
+   __weak typeof(self) weakself = self;    
    return  [tableView fd_heightForCellWithIdentifier:@"FDFeedCell" configuration:^(sunny2TableViewCell *cell) {
         [weakself configureCell:cell atIndexPath:indexPath];
     }];
