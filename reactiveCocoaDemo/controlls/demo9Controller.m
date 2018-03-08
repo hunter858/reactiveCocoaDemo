@@ -39,7 +39,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    __weak typeof(weakself)  self = self;
+    __weak typeof(self)  weakself = self;
     [[self.Button1 rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
         [weakself demo1];
     }];
