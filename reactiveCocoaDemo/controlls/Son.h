@@ -10,4 +10,8 @@
 
 @interface Son : Father
 
+@property (nonatomic,copy) void(^testBlock)();
+
+-(void)testRequest:(void(^)(NSDate *))block;
+
 @end

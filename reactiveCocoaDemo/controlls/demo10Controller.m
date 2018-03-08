@@ -26,7 +26,7 @@ typedef  void(^myBlock)();
 @property (strong, nonatomic) IBOutlet UIButton *Button6;
 @property (strong, nonatomic) IBOutlet UIButton *Button7;
 @property (strong, nonatomic) IBOutlet UIButton *Button8;
-
+@property (copy,nonatomic) NSString *name;
 @end
 
 @implementation demo10Controller
@@ -89,27 +89,65 @@ typedef  void(^myBlock)();
 -(void)demo3{
     /*
      自定义Block 发生循环引用
-     
      系统提示: Capturing 'self' strongly in this block is likely to lead to a retain cycle
      */
-    self.showLabel.text = @"自定义Block 发生循环引用 \n 系统提示: Capturing 'self' strongly in this block is likely to lead to a retain cycle";
+    self.showLabel.text = @"自定义Block 发生循环引用 \n 系统提示: Capturing 'self' strongly in this block is likely to lead to a retain cycle \n ViewControl pop 的时候没有调用 -(void)dealloc{}";
     
     _myBlock =^{
         NSLog(@"self.view:%@",self.view);
     };
     
 }
+
 -(void)demo4{
+    /*
+     
+     */
+    
+    __weak typeof(self) weakself = self;
+    _myBlock =^{
+        
+        typeof(weakself) strongSelf = weakself;
+        strongSelf.name=@"测试字符串 ";
+    };
     
 }
+
 -(void)demo5{
+    /*
+     block 内直接用 self （自定义的Block）
+     此种情况 必定 会发生循环引用
+     */
+    _myBlock = ^{
+      
+        self.name =@"";
+        
+    };
+    
     
 }
+
 -(void)demo6{
+    
+    /*
+     
+     */
+     __weak typeof(self) weakself = self;
+    Son *son6 = [[Son alloc]init];
+    [son6 testRequest:^(NSDate *date) {
+        weakself.name = @"";
+    }];
+    
     
 }
 -(void)demo7{
-    
+    /*
+     
+     */
+    Son *son6 = [[Son alloc]init];
+    [son6 testRequest:^(NSDate *date) {
+        self.name = @"";
+    }];
 }
 -(void)demo8{
     

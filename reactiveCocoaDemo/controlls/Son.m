@@ -14,6 +14,7 @@
     
     
     /*
+     
      */
     
     self = [super init];
@@ -23,5 +24,15 @@
     }
     return self;
 }
+
+-(void)testRequest:(void (^)(NSDate *))block{
+    
+    if (block!=nil) {
+        block([NSDate new]);
+    }
+    
+    
+}
+
 
 @end

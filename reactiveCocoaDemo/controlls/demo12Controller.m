@@ -98,7 +98,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-   __weak typeof(self) weakself = self;    
+   __weak typeof(self) weakself = self;
    return  [tableView fd_heightForCellWithIdentifier:@"FDFeedCell" configuration:^(sunny2TableViewCell *cell) {
         [weakself configureCell:cell atIndexPath:indexPath];
     }];

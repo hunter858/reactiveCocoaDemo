@@ -44,12 +44,12 @@
                             <state key="normal" title="自定义Block 出现循环引用"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLA-n4-vEc">
-                            <rect key="frame" x="114.5" y="201.5" width="46" height="30"/>
-                            <state key="normal" title="Button"/>
+                            <rect key="frame" x="58.5" y="201.5" width="158" height="30"/>
+                            <state key="normal" title="Block 内weak 双重引用"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0RE-0b-nze">
-                            <rect key="frame" x="114.5" y="268.5" width="46" height="30"/>
-                            <state key="normal" title="Button"/>
+                            <rect key="frame" x="79.5" y="268.5" width="116" height="30"/>
+                            <state key="normal" title="block 内self 引用"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TwS-pT-yzb">
                             <rect key="frame" x="114.5" y="335.5" width="46" height="30"/>
