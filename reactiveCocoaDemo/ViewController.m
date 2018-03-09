@@ -31,7 +31,7 @@ static NSString *identifier = @"DefaultTableViewCell";
     
     [self.MyTableView registerNib:[UINib nibWithNibName:@"DefaultTableViewCell" bundle:nil] forCellReuseIdentifier:identifier];
     self.MyTableView.estimatedRowHeight = 80;
-    
+    self.MyTableView.rowHeight = UITableViewAutomaticDimension;
 }
 
 -(NSMutableArray *)dataArray{
@@ -111,21 +111,23 @@ static NSString *identifier = @"DefaultTableViewCell";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    
     DefaultTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (!cell) {
         cell  =[[DefaultTableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifier];
     }
-    
     viewModel *model = self.dataArray[indexPath.row];
     [cell setTitle:model.title subTitle:model.subTitle];
+    [cell layoutIfNeeded];
     return cell;
-    
 }
 
 
+-(CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return UITableViewAutomaticDimension;
+}
+
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 70;
+    return UITableViewAutomaticDimension;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
