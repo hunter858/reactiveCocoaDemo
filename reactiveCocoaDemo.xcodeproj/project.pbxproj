@@ -39,6 +39,10 @@
 		E617A5371F41DE9E00C9D381 /* demo7Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E617A5351F41DE9E00C9D381 /* demo7Controller.m */; };
 		E617A5381F41DE9E00C9D381 /* demo7Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = E617A5361F41DE9E00C9D381 /* demo7Controller.xib */; };
 		E61AE8D81F5D608600943F00 /* layerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E61AE8D71F5D608600943F00 /* layerButton.m */; };
+		E646AC8E2052635F0098B465 /* demo13ControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E646AC8C2052635F0098B465 /* demo13ControllerViewController.m */; };
+		E646AC8F2052635F0098B465 /* demo13ControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E646AC8D2052635F0098B465 /* demo13ControllerViewController.xib */; };
+		E646AC92205264E30098B465 /* commentView.m in Sources */ = {isa = PBXBuildFile; fileRef = E646AC91205264E30098B465 /* commentView.m */; };
+		E646AC96205264F80098B465 /* commentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E646AC95205264F80098B465 /* commentView.xib */; };
 		E64E78D81F2DA7C800A52BD1 /* demo1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E64E78D61F2DA7C800A52BD1 /* demo1Controller.m */; };
 		E64E78D91F2DA7C800A52BD1 /* demo1Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = E64E78D71F2DA7C800A52BD1 /* demo1Controller.xib */; };
 		E64E78DD1F2DA7D700A52BD1 /* demo2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E64E78DB1F2DA7D700A52BD1 /* demo2Controller.m */; };
@@ -122,6 +126,12 @@
 		E617A5361F41DE9E00C9D381 /* demo7Controller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = demo7Controller.xib; sourceTree = "<group>"; };
 		E61AE8D61F5D608600943F00 /* layerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = layerButton.h; sourceTree = "<group>"; };
 		E61AE8D71F5D608600943F00 /* layerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = layerButton.m; sourceTree = "<group>"; };
+		E646AC8B2052635F0098B465 /* demo13ControllerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = demo13ControllerViewController.h; sourceTree = "<group>"; };
+		E646AC8C2052635F0098B465 /* demo13ControllerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = demo13ControllerViewController.m; sourceTree = "<group>"; };
+		E646AC8D2052635F0098B465 /* demo13ControllerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = demo13ControllerViewController.xib; sourceTree = "<group>"; };
+		E646AC90205264E30098B465 /* commentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = commentView.h; sourceTree = "<group>"; };
+		E646AC91205264E30098B465 /* commentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = commentView.m; sourceTree = "<group>"; };
+		E646AC95205264F80098B465 /* commentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = commentView.xib; sourceTree = "<group>"; };
 		E64E78D51F2DA7C800A52BD1 /* demo1Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demo1Controller.h; sourceTree = "<group>"; };
 		E64E78D61F2DA7C800A52BD1 /* demo1Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = demo1Controller.m; sourceTree = "<group>"; };
 		E64E78D71F2DA7C800A52BD1 /* demo1Controller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = demo1Controller.xib; sourceTree = "<group>"; };
@@ -276,6 +286,9 @@
 				E60CE12A204D3FD100249347 /* sunny2Model.h */,
 				E60CE12B204D3FD100249347 /* sunny2Model.m */,
 				E60CE12D204D443E00249347 /* data.json */,
+				E646AC90205264E30098B465 /* commentView.h */,
+				E646AC91205264E30098B465 /* commentView.m */,
+				E646AC95205264F80098B465 /* commentView.xib */,
 			);
 			name = "New Group";
 			path = controlls;
@@ -320,6 +333,9 @@
 				E60CE120204D3EEC00249347 /* demo12Controller.h */,
 				E60CE121204D3EEC00249347 /* demo12Controller.m */,
 				E60CE122204D3EEC00249347 /* demo12Controller.xib */,
+				E646AC8B2052635F0098B465 /* demo13ControllerViewController.h */,
+				E646AC8C2052635F0098B465 /* demo13ControllerViewController.m */,
+				E646AC8D2052635F0098B465 /* demo13ControllerViewController.xib */,
 			);
 			path = controlls;
 			sourceTree = "<group>";
@@ -445,7 +461,9 @@
 				E60852671F2D9A3C00671793 /* Assets.xcassets in Resources */,
 				E60CE12E204D443E00249347 /* data.json in Resources */,
 				E60CE129204D3FBF00249347 /* sunny2TableViewCell.xib in Resources */,
+				E646AC8F2052635F0098B465 /* demo13ControllerViewController.xib in Resources */,
 				E64E78D91F2DA7C800A52BD1 /* demo1Controller.xib in Resources */,
+				E646AC96205264F80098B465 /* commentView.xib in Resources */,
 				E617A5381F41DE9E00C9D381 /* demo7Controller.xib in Resources */,
 				E64E78DE1F2DA7D700A52BD1 /* demo2Controller.xib in Resources */,
 				E60CE134204FB2F300249347 /* DefaultTableViewCell.xib in Resources */,
@@ -544,6 +562,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6FD67EF2045A5AE00129C63 /* Son.m in Sources */,
+				E646AC92205264E30098B465 /* commentView.m in Sources */,
 				E617A5371F41DE9E00C9D381 /* demo7Controller.m in Sources */,
 				E60852621F2D9A3C00671793 /* ViewController.m in Sources */,
 				E612150E1F3D9A6100D39B5A /* demo4Controller.m in Sources */,
@@ -559,6 +578,7 @@
 				E60CE128204D3FBF00249347 /* sunny2TableViewCell.m in Sources */,
 				E64E78E21F2DA7E500A52BD1 /* demo3Controller.m in Sources */,
 				E60CE133204FB2F300249347 /* DefaultTableViewCell.m in Sources */,
+				E646AC8E2052635F0098B465 /* demo13ControllerViewController.m in Sources */,
 				E617A5321F41DE9100C9D381 /* demo6Controller.m in Sources */,
 				E6CB68F5204BC03200D8981A /* demo11ViewController.m in Sources */,
 				E608525C1F2D9A3C00671793 /* main.m in Sources */,

@@ -99,7 +99,14 @@ static NSString *identifier = @"DefaultTableViewCell";
         model12.subTitle = @"UITableView+FDTemplateLayoutCell 适配不同cell 案例";
         model12.controller = @"demo12Controller";
         
-        _dataArray = @[model1,model2,model3,model4,model5,model6,model7,model8,model9,model10,model11,model12].mutableCopy;
+        
+        viewModel *model13 = [[viewModel alloc]init];
+        model12.title = @"demo13";
+        model12.subTitle = @"";
+        model12.controller = @"demo13ControllerViewController";
+        
+        _dataArray = @[model1,model2,model3,model4,model5,model6,
+                       model7,model8,model9,model10,model11,model12,model13].mutableCopy;
     }
     return _dataArray;
 }
