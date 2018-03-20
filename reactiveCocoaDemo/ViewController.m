@@ -107,7 +107,7 @@ static NSString *identifier = @"DefaultTableViewCell";
         
         viewModel *model14 = [[viewModel alloc]init];
         model14.title = @"demo14";
-        model14.subTitle = @"";
+        model14.subTitle = @"App中添加半透明新手指引 使用maskLayer";
         model14.controller = @"demo14Controller";
         
         

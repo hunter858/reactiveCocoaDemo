@@ -102,8 +102,7 @@
     if (self.selectCount==1) {
         
         //左上角
-        
-        
+                
         [path appendPath:[[UIBezierPath bezierPathWithRoundedRect:CGRectMake(frame.size.width/2.0-1, 234, frame.size.width/2.0+1, 55) cornerRadius:5] bezierPathByReversingPath]];
     }
     else if(self.selectCount==2){
