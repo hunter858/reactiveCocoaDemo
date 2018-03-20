@@ -39,6 +39,8 @@
 		E617A5371F41DE9E00C9D381 /* demo7Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E617A5351F41DE9E00C9D381 /* demo7Controller.m */; };
 		E617A5381F41DE9E00C9D381 /* demo7Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = E617A5361F41DE9E00C9D381 /* demo7Controller.xib */; };
 		E61AE8D81F5D608600943F00 /* layerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E61AE8D71F5D608600943F00 /* layerButton.m */; };
+		E61DA9C8206109A000C526CA /* demo14Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E61DA9C6206109A000C526CA /* demo14Controller.m */; };
+		E61DA9C9206109A000C526CA /* demo14Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = E61DA9C7206109A000C526CA /* demo14Controller.xib */; };
 		E646AC8E2052635F0098B465 /* demo13ControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E646AC8C2052635F0098B465 /* demo13ControllerViewController.m */; };
 		E646AC8F2052635F0098B465 /* demo13ControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E646AC8D2052635F0098B465 /* demo13ControllerViewController.xib */; };
 		E646AC92205264E30098B465 /* commentView.m in Sources */ = {isa = PBXBuildFile; fileRef = E646AC91205264E30098B465 /* commentView.m */; };
@@ -126,6 +128,10 @@
 		E617A5361F41DE9E00C9D381 /* demo7Controller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = demo7Controller.xib; sourceTree = "<group>"; };
 		E61AE8D61F5D608600943F00 /* layerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = layerButton.h; sourceTree = "<group>"; };
 		E61AE8D71F5D608600943F00 /* layerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = layerButton.m; sourceTree = "<group>"; };
+		E61DA9C02061098A00C526CA /* reactiveCocoaDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "reactiveCocoaDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		E61DA9C5206109A000C526CA /* demo14Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = demo14Controller.h; sourceTree = "<group>"; };
+		E61DA9C6206109A000C526CA /* demo14Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = demo14Controller.m; sourceTree = "<group>"; };
+		E61DA9C7206109A000C526CA /* demo14Controller.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = demo14Controller.xib; sourceTree = "<group>"; };
 		E646AC8B2052635F0098B465 /* demo13ControllerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = demo13ControllerViewController.h; sourceTree = "<group>"; };
 		E646AC8C2052635F0098B465 /* demo13ControllerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = demo13ControllerViewController.m; sourceTree = "<group>"; };
 		E646AC8D2052635F0098B465 /* demo13ControllerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = demo13ControllerViewController.xib; sourceTree = "<group>"; };
@@ -336,6 +342,10 @@
 				E646AC8B2052635F0098B465 /* demo13ControllerViewController.h */,
 				E646AC8C2052635F0098B465 /* demo13ControllerViewController.m */,
 				E646AC8D2052635F0098B465 /* demo13ControllerViewController.xib */,
+				E61DA9C5206109A000C526CA /* demo14Controller.h */,
+				E61DA9C6206109A000C526CA /* demo14Controller.m */,
+				E61DA9C7206109A000C526CA /* demo14Controller.xib */,
+				E61DA9C02061098A00C526CA /* reactiveCocoaDemo-Bridging-Header.h */,
 			);
 			path = controlls;
 			sourceTree = "<group>";
@@ -410,6 +420,7 @@
 				TargetAttributes = {
 					E60852561F2D9A3C00671793 = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					E608526F1F2D9A3D00671793 = {
@@ -449,6 +460,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E61DA9C9206109A000C526CA /* demo14Controller.xib in Resources */,
 				E64E78E31F2DA7E500A52BD1 /* demo3Controller.xib in Resources */,
 				E617A5331F41DE9100C9D381 /* demo6Controller.xib in Resources */,
 				E611EE281F6115BB00291DCD /* demo9Controller.xib in Resources */,
@@ -580,6 +592,7 @@
 				E60CE133204FB2F300249347 /* DefaultTableViewCell.m in Sources */,
 				E646AC8E2052635F0098B465 /* demo13ControllerViewController.m in Sources */,
 				E617A5321F41DE9100C9D381 /* demo6Controller.m in Sources */,
+				E61DA9C8206109A000C526CA /* demo14Controller.m in Sources */,
 				E6CB68F5204BC03200D8981A /* demo11ViewController.m in Sources */,
 				E608525C1F2D9A3C00671793 /* main.m in Sources */,
 				E61AE8D81F5D608600943F00 /* layerButton.m in Sources */,
@@ -735,10 +748,14 @@
 			baseConfigurationReference = B31FD24F3D73AA2E6498BF8B /* Pods-reactiveCocoaDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = reactiveCocoaDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = springTour.reactiveCocoaDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "reactiveCocoaDemo/controlls/reactiveCocoaDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Debug;
@@ -748,10 +765,13 @@
 			baseConfigurationReference = 2843A2680C680C161C6204D5 /* Pods-reactiveCocoaDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = reactiveCocoaDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = springTour.reactiveCocoaDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "reactiveCocoaDemo/controlls/reactiveCocoaDemo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Release;

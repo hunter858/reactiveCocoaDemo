@@ -91,7 +91,7 @@ static NSString *identifier = @"DefaultTableViewCell";
         
         viewModel *model11 = [[viewModel alloc]init];
         model11.title = @"demo11";
-        model11.subTitle = @"";
+        model11.subTitle = @"Runloop 和NStimer 实用指南";
         model11.controller = @"demo11ViewController";
         
         viewModel *model12 = [[viewModel alloc]init];
@@ -101,12 +101,18 @@ static NSString *identifier = @"DefaultTableViewCell";
         
         
         viewModel *model13 = [[viewModel alloc]init];
-        model12.title = @"demo13";
-        model12.subTitle = @"";
-        model12.controller = @"demo13ControllerViewController";
+        model13.title = @"demo13";
+        model13.subTitle = @"";
+        model13.controller = @"demo13ControllerViewController";
+        
+        viewModel *model14 = [[viewModel alloc]init];
+        model14.title = @"demo14";
+        model14.subTitle = @"";
+        model14.controller = @"demo14Controller";
+        
         
         _dataArray = @[model1,model2,model3,model4,model5,model6,
-                       model7,model8,model9,model10,model11,model12,model13].mutableCopy;
+                       model7,model8,model9,model10,model11,model12,model13,model14].mutableCopy;
     }
     return _dataArray;
 }
