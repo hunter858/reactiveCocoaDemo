@@ -11,6 +11,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="demo11ViewController">
             <connections>
+                <outlet property="myTableView" destination="aja-yA-eZu" id="WHz-5t-mKN"/>
+                <outlet property="showlabel" destination="gBb-bh-psj" id="zg2-b2-0QC"/>
+                <outlet property="stepper" destination="syy-ee-4Rt" id="uJF-tG-Vw4"/>
+                <outlet property="stepperLabel" destination="RWI-zE-xIB" id="RI4-U3-XbP"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,17 +24,108 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aja-yA-eZu">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <rect key="frame" x="0.0" y="220" width="375" height="447"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sw2-hM-N9Q" userLabel="header">
+                    <rect key="frame" x="0.0" y="60" width="375" height="160"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x x x x" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBb-bh-psj">
+                            <rect key="frame" x="8" y="30" width="359" height="41"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Vxg-c6-jAs"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                            <color key="textColor" red="0.079371052420000004" green="0.66666668650000005" blue="0.064369602129999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="10Y-9M-Iau">
+                            <rect key="frame" x="8" y="78" width="359" height="30"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OlL-9l-kha">
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="30"/>
+                                    <state key="normal" title=" 开始倒计时"/>
+                                    <connections>
+                                        <action selector="startTimer:" destination="-1" eventType="touchUpInside" id="Wxv-db-wPa"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFk-j3-1SY">
+                                    <rect key="frame" x="90" y="0.0" width="89.5" height="30"/>
+                                    <state key="normal" title="停止倒计时"/>
+                                    <connections>
+                                        <action selector="stopTimer:" destination="-1" eventType="touchUpInside" id="Q4p-ia-v73"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYe-Y7-JIg">
+                                    <rect key="frame" x="179.5" y="0.0" width="90" height="30"/>
+                                    <state key="normal" title="添加runloop">
+                                        <color key="titleColor" red="0.96906632179999996" green="0.6060139537" blue="0.16250127549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="addRunloopAction:" destination="-1" eventType="touchUpInside" id="nl8-Dw-AjI"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hv6-n9-3vZ">
+                                    <rect key="frame" x="269.5" y="0.0" width="89.5" height="30"/>
+                                    <state key="normal" title="移除runloop">
+                                        <color key="titleColor" red="0.079371052420000004" green="0.66666668650000005" blue="0.064369602129999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="removeRunnLoopAction:" destination="-1" eventType="touchUpInside" id="GtP-4t-Y1c"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="USn-LL-KOh"/>
+                            </constraints>
+                        </stackView>
+                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="syy-ee-4Rt">
+                            <rect key="frame" x="14" y="123" width="94" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="94" id="MUv-Fv-sID"/>
+                                <constraint firstAttribute="height" constant="29" id="uro-Lw-Okj"/>
+                            </constraints>
+                        </stepper>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="模式切换 点+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWI-zE-xIB">
+                            <rect key="frame" x="123" y="127" width="244" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="qhX-EO-DjX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="RWI-zE-xIB" firstAttribute="centerY" secondItem="syy-ee-4Rt" secondAttribute="centerY" id="2IJ-5g-F7a"/>
+                        <constraint firstItem="syy-ee-4Rt" firstAttribute="top" secondItem="10Y-9M-Iau" secondAttribute="bottom" constant="15" id="2dB-pW-BD6"/>
+                        <constraint firstItem="10Y-9M-Iau" firstAttribute="leading" secondItem="sw2-hM-N9Q" secondAttribute="leading" constant="8" id="7ke-aB-Hi1"/>
+                        <constraint firstAttribute="trailing" secondItem="10Y-9M-Iau" secondAttribute="trailing" constant="8" id="8pq-yQ-Erb"/>
+                        <constraint firstItem="gBb-bh-psj" firstAttribute="centerX" secondItem="sw2-hM-N9Q" secondAttribute="centerX" id="KWz-lM-1Wk"/>
+                        <constraint firstAttribute="trailing" secondItem="gBb-bh-psj" secondAttribute="trailing" constant="8" id="UQ1-YW-uEj"/>
+                        <constraint firstItem="10Y-9M-Iau" firstAttribute="top" secondItem="gBb-bh-psj" secondAttribute="bottom" constant="7" id="VP6-Hb-kkk"/>
+                        <constraint firstAttribute="trailing" secondItem="RWI-zE-xIB" secondAttribute="trailing" constant="8" id="Yvq-HL-sfz"/>
+                        <constraint firstItem="RWI-zE-xIB" firstAttribute="leading" secondItem="syy-ee-4Rt" secondAttribute="trailing" constant="15" id="dC7-mJ-P1c"/>
+                        <constraint firstAttribute="bottom" secondItem="syy-ee-4Rt" secondAttribute="bottom" constant="8" id="hVc-Dw-HpM"/>
+                        <constraint firstItem="gBb-bh-psj" firstAttribute="top" secondItem="sw2-hM-N9Q" secondAttribute="top" constant="30" id="mYt-sA-hZc"/>
+                        <constraint firstItem="gBb-bh-psj" firstAttribute="leading" secondItem="sw2-hM-N9Q" secondAttribute="leading" constant="8" id="ndH-m3-C6S"/>
+                        <constraint firstItem="syy-ee-4Rt" firstAttribute="leading" secondItem="10Y-9M-Iau" secondAttribute="leading" constant="6" id="sCd-W3-ieh"/>
+                        <constraint firstAttribute="height" constant="160" id="xNz-66-Djy"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="aja-yA-eZu" secondAttribute="bottom" id="GtY-wc-zPU"/>
-                <constraint firstItem="aja-yA-eZu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sDg-Yq-sBF"/>
+                <constraint firstItem="sw2-hM-N9Q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HBT-9m-Tnc"/>
+                <constraint firstAttribute="trailing" secondItem="sw2-hM-N9Q" secondAttribute="trailing" id="cQq-aL-aqx"/>
+                <constraint firstItem="aja-yA-eZu" firstAttribute="top" secondItem="sw2-hM-N9Q" secondAttribute="bottom" id="hfB-cD-YyE"/>
+                <constraint firstItem="sw2-hM-N9Q" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="r8b-Cx-943"/>
                 <constraint firstAttribute="trailing" secondItem="aja-yA-eZu" secondAttribute="trailing" id="tIc-da-DEL"/>
                 <constraint firstItem="aja-yA-eZu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="u8v-fA-Ajn"/>
             </constraints>
+            <point key="canvasLocation" x="32.5" y="60.5"/>
         </view>
     </objects>
 </document>

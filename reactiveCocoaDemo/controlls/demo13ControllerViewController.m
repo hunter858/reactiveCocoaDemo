@@ -26,6 +26,23 @@
     
     [comment_View setButtonWithNumber:10];
     
+    //富文本对象
+    
+    NSString * aString = @"¥150 元/位";
+    NSMutableAttributedString * aAttributedString = [[NSMutableAttributedString alloc] initWithString:aString];
+
+    //富文本样式
+    [aAttributedString addAttribute:NSForegroundColorAttributeName  //文字颜色
+                                     value:[UIColor redColor]
+                                   range:NSMakeRange(0, 4)];
+
+    [aAttributedString addAttribute:NSFontAttributeName             //文字字体
+                                    value:[UIFont systemFontOfSize:25]
+                                    range:NSMakeRange(0, 4)];
+
+    self.label.attributedText = aAttributedString;
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
