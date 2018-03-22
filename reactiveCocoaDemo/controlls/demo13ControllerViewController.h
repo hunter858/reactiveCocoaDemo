@@ -10,8 +10,4 @@
 
 @interface demo13ControllerViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *label;
-
-
-
 @end

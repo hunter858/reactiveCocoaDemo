@@ -28,43 +28,43 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Py5-aa-brG">
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Py5-aa-brG">
                     <rect key="frame" x="50" y="86" width="275" height="567"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1V-Dz-2Av">
-                            <rect key="frame" x="79" y="0.0" width="117" height="30"/>
+                            <rect key="frame" x="79" y="0.0" width="117" height="63"/>
                             <state key="normal" title="super &amp; self 区别"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMz-qb-IGD">
-                            <rect key="frame" x="49.5" y="67" width="176" height="30"/>
+                            <rect key="frame" x="49.5" y="63" width="176" height="63"/>
                             <state key="normal" title="系统API没有出现循环引用"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WM8-CA-i69">
-                            <rect key="frame" x="47.5" y="134.5" width="180" height="30"/>
+                            <rect key="frame" x="47.5" y="126" width="180" height="63"/>
                             <state key="normal" title="自定义Block 出现循环引用"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLA-n4-vEc">
-                            <rect key="frame" x="58.5" y="201.5" width="158" height="30"/>
+                            <rect key="frame" x="58.5" y="189" width="158" height="63"/>
                             <state key="normal" title="Block 内weak 双重引用"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0RE-0b-nze">
-                            <rect key="frame" x="79.5" y="268.5" width="116" height="30"/>
+                            <rect key="frame" x="79.5" y="252" width="116" height="63"/>
                             <state key="normal" title="block 内self 引用"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TwS-pT-yzb">
-                            <rect key="frame" x="114.5" y="335.5" width="46" height="30"/>
+                            <rect key="frame" x="114.5" y="315" width="46" height="63"/>
                             <state key="normal" title="Button"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUI-yO-1BQ">
-                            <rect key="frame" x="114.5" y="403" width="46" height="30"/>
+                            <rect key="frame" x="114.5" y="378" width="46" height="63"/>
                             <state key="normal" title="Button"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asG-WB-RnS">
-                            <rect key="frame" x="114.5" y="470" width="46" height="30"/>
+                            <rect key="frame" x="114.5" y="441" width="46" height="63"/>
                             <state key="normal" title="Button"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GzT-gP-sb6">
-                            <rect key="frame" x="114.5" y="537" width="46" height="30"/>
+                            <rect key="frame" x="114.5" y="504" width="46" height="63"/>
                             <state key="normal" title="Button"/>
                         </button>
                     </subviews>

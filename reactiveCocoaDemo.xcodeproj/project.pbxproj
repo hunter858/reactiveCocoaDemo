@@ -51,6 +51,11 @@
 		E64E78DE1F2DA7D700A52BD1 /* demo2Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = E64E78DC1F2DA7D700A52BD1 /* demo2Controller.xib */; };
 		E64E78E21F2DA7E500A52BD1 /* demo3Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E64E78E01F2DA7E500A52BD1 /* demo3Controller.m */; };
 		E64E78E31F2DA7E500A52BD1 /* demo3Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = E64E78E11F2DA7E500A52BD1 /* demo3Controller.xib */; };
+		E679E9D620622BA900A1B406 /* UIImage+destructive.m in Sources */ = {isa = PBXBuildFile; fileRef = E679E9D520622BA900A1B406 /* UIImage+destructive.m */; };
+		E679E9DA2063ADB500A1B406 /* demo15Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E679E9D82063ADB500A1B406 /* demo15Controller.m */; };
+		E679E9DB2063ADB500A1B406 /* demo15Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = E679E9D92063ADB500A1B406 /* demo15Controller.xib */; };
+		E679E9DF2063AE7300A1B406 /* A_Object.m in Sources */ = {isa = PBXBuildFile; fileRef = E679E9DE2063AE7300A1B406 /* A_Object.m */; };
+		E679E9E22063AE8000A1B406 /* B_Object.m in Sources */ = {isa = PBXBuildFile; fileRef = E679E9E12063AE8000A1B406 /* B_Object.m */; };
 		E6CB68F5204BC03200D8981A /* demo11ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6CB68F3204BC03200D8981A /* demo11ViewController.m */; };
 		E6CB68F6204BC03200D8981A /* demo11ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6CB68F4204BC03200D8981A /* demo11ViewController.xib */; };
 		E6FD67EC2045A59B00129C63 /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FD67EB2045A59B00129C63 /* Father.m */; };
@@ -147,6 +152,15 @@
 		E64E78DF1F2DA7E500A52BD1 /* demo3Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demo3Controller.h; sourceTree = "<group>"; };
 		E64E78E01F2DA7E500A52BD1 /* demo3Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = demo3Controller.m; sourceTree = "<group>"; };
 		E64E78E11F2DA7E500A52BD1 /* demo3Controller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = demo3Controller.xib; sourceTree = "<group>"; };
+		E679E9D420622BA900A1B406 /* UIImage+destructive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+destructive.h"; sourceTree = "<group>"; };
+		E679E9D520622BA900A1B406 /* UIImage+destructive.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+destructive.m"; sourceTree = "<group>"; };
+		E679E9D72063ADB500A1B406 /* demo15Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = demo15Controller.h; sourceTree = "<group>"; };
+		E679E9D82063ADB500A1B406 /* demo15Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = demo15Controller.m; sourceTree = "<group>"; };
+		E679E9D92063ADB500A1B406 /* demo15Controller.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = demo15Controller.xib; sourceTree = "<group>"; };
+		E679E9DD2063AE7300A1B406 /* A_Object.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A_Object.h; sourceTree = "<group>"; };
+		E679E9DE2063AE7300A1B406 /* A_Object.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A_Object.m; sourceTree = "<group>"; };
+		E679E9E02063AE8000A1B406 /* B_Object.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = B_Object.h; sourceTree = "<group>"; };
+		E679E9E12063AE8000A1B406 /* B_Object.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = B_Object.m; sourceTree = "<group>"; };
 		E6CB68F2204BC03200D8981A /* demo11ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = demo11ViewController.h; sourceTree = "<group>"; };
 		E6CB68F3204BC03200D8981A /* demo11ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = demo11ViewController.m; sourceTree = "<group>"; };
 		E6CB68F4204BC03200D8981A /* demo11ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = demo11ViewController.xib; sourceTree = "<group>"; };
@@ -225,7 +239,9 @@
 		E60852591F2D9A3C00671793 /* reactiveCocoaDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E679E9D320622A7400A1B406 /* category */,
 				E60CE12F204FB2D200249347 /* View */,
+				E679E9DC2063AE5E00A1B406 /* Model */,
 				E61AE8D51F5D606C00943F00 /* New Group */,
 				E64E78D41F2D9F8400A52BD1 /* controlls */,
 				E608525D1F2D9A3C00671793 /* AppDelegate.h */,
@@ -345,9 +361,32 @@
 				E61DA9C5206109A000C526CA /* demo14Controller.h */,
 				E61DA9C6206109A000C526CA /* demo14Controller.m */,
 				E61DA9C7206109A000C526CA /* demo14Controller.xib */,
+				E679E9D72063ADB500A1B406 /* demo15Controller.h */,
+				E679E9D82063ADB500A1B406 /* demo15Controller.m */,
+				E679E9D92063ADB500A1B406 /* demo15Controller.xib */,
 				E61DA9C02061098A00C526CA /* reactiveCocoaDemo-Bridging-Header.h */,
 			);
 			path = controlls;
+			sourceTree = "<group>";
+		};
+		E679E9D320622A7400A1B406 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				E679E9D420622BA900A1B406 /* UIImage+destructive.h */,
+				E679E9D520622BA900A1B406 /* UIImage+destructive.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		E679E9DC2063AE5E00A1B406 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E679E9DD2063AE7300A1B406 /* A_Object.h */,
+				E679E9DE2063AE7300A1B406 /* A_Object.m */,
+				E679E9E02063AE8000A1B406 /* B_Object.h */,
+				E679E9E12063AE8000A1B406 /* B_Object.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -478,6 +517,7 @@
 				E646AC96205264F80098B465 /* commentView.xib in Resources */,
 				E617A5381F41DE9E00C9D381 /* demo7Controller.xib in Resources */,
 				E64E78DE1F2DA7D700A52BD1 /* demo2Controller.xib in Resources */,
+				E679E9DB2063ADB500A1B406 /* demo15Controller.xib in Resources */,
 				E60CE134204FB2F300249347 /* DefaultTableViewCell.xib in Resources */,
 				E612150F1F3D9A6100D39B5A /* demo4Controller.xib in Resources */,
 				E60852651F2D9A3C00671793 /* Main.storyboard in Resources */,
@@ -574,6 +614,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6FD67EF2045A5AE00129C63 /* Son.m in Sources */,
+				E679E9E22063AE8000A1B406 /* B_Object.m in Sources */,
 				E646AC92205264E30098B465 /* commentView.m in Sources */,
 				E617A5371F41DE9E00C9D381 /* demo7Controller.m in Sources */,
 				E60852621F2D9A3C00671793 /* ViewController.m in Sources */,
@@ -584,6 +625,8 @@
 				E60CE123204D3EEC00249347 /* demo12Controller.m in Sources */,
 				E611EE271F6115BB00291DCD /* demo9Controller.m in Sources */,
 				E611EE221F6115AB00291DCD /* demo8Controller.m in Sources */,
+				E679E9D620622BA900A1B406 /* UIImage+destructive.m in Sources */,
+				E679E9DA2063ADB500A1B406 /* demo15Controller.m in Sources */,
 				E64E78D81F2DA7C800A52BD1 /* demo1Controller.m in Sources */,
 				E64E78DD1F2DA7D700A52BD1 /* demo2Controller.m in Sources */,
 				E60CE12C204D3FD100249347 /* sunny2Model.m in Sources */,
@@ -593,6 +636,7 @@
 				E646AC8E2052635F0098B465 /* demo13ControllerViewController.m in Sources */,
 				E617A5321F41DE9100C9D381 /* demo6Controller.m in Sources */,
 				E61DA9C8206109A000C526CA /* demo14Controller.m in Sources */,
+				E679E9DF2063AE7300A1B406 /* A_Object.m in Sources */,
 				E6CB68F5204BC03200D8981A /* demo11ViewController.m in Sources */,
 				E608525C1F2D9A3C00671793 /* main.m in Sources */,
 				E61AE8D81F5D608600943F00 /* layerButton.m in Sources */,

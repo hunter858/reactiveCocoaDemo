@@ -111,8 +111,15 @@ static NSString *identifier = @"DefaultTableViewCell";
         model14.controller = @"demo14Controller";
         
         
+        viewModel *model15 = [[viewModel alloc]init];
+        model15.title = @"demo15";
+        model15.subTitle = @"KVO 和 KVC 使用";
+        model15.controller = @"demo15Controller";
+        
+        
         _dataArray = @[model1,model2,model3,model4,model5,model6,
-                       model7,model8,model9,model10,model11,model12,model13,model14].mutableCopy;
+                       model7,model8,model9,model10,model11,model12,
+                       model13,model14,model15].mutableCopy;
     }
     return _dataArray;
 }
